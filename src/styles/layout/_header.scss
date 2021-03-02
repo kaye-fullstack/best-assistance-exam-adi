@@ -1,0 +1,253 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+header {
+  .container{
+    padding: 0;
+    .navbar{
+      .navbar-brand{
+        width: 250px;
+
+        margin: 6px 0 0 100px;
+      }
+      .nav-item{
+        margin: 30px 29px 0 0;
+      }
+      ul{
+        a{
+          font-size: 14px;
+          color: $mid-grey; 
+        }
+      }
+    }
+
+    .navbar-buttons{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+
+      .btn-number{
+        padding: 13px 19px;
+        margin: 26px 3px 0 20px;
+
+        font-size: 15px;
+        color: $white;
+
+        background-color: $orange;
+        border: none;
+        border-radius: 37px;
+        img{
+          padding-right: 8px;
+        }
+      }  
+
+      .btn-language{
+        padding: 13px 20px;
+        margin: 26px 101px 0 0;
+
+        font-size: 15px;
+        color: $white;
+
+        background-color: $dark-blue;
+        border: none;
+        border-radius: 37px;
+
+        img{
+          padding-left: 8px;
+        }
+      }          
+    }
+  }
+}
+
+@include respond-to(lg) {
+  header {
+    .container{
+      .navbar{
+        .navbar-brand{
+          margin: 6px 0 0 10px;
+          width: 200px;
+          img{
+            width: 200px;
+
+            margin: none;
+          }
+        }
+  
+        .nav-item{
+          margin: 35px 0 0 0;
+        }
+      }
+  
+      .navbar-buttons{
+        .btn-number{
+          margin: 15px 3px 0 15px;
+          padding: 10px 19px;
+        }
+
+        .btn-language{
+          margin: 19px 12px 0 0;
+          padding: 10px 18px;
+        }        
+      }
+    }
+  }
+}
+
+  @media (min-width: 992px) and (max-width: 1090px) {
+    header {
+      .container{
+        .navbar{
+          .navbar-brand{
+            margin: 6px 0 0 5px;
+          }
+          .btn-number{
+            margin: 26px 5px 0 5px;
+
+            font-size: 13px;
+          }
+          .btn-language{
+            margin: 26px 5px 0 0;
+
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+
+  @include respond-to(md) {
+    header {
+      .container{
+        .navbar{
+          .navbar-brand{
+            margin: 6px 0 0 25px;
+            width: 200px;
+            img{
+              width: 200px;
+
+              margin: none;
+            }
+          }
+    
+          .nav-item{
+            margin: 35px 0 0 0;
+            .nav-link{
+              padding-right: none;
+            }
+          }
+        }
+    
+        .navbar-buttons{
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+
+          .btn-number{
+            margin: 26px 20px 0 20px;
+            font-size: 13px;
+          }
+    
+          .btn-language{
+            margin: 26px 20px 0 0;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  } 
+
+  @include respond-to(sm) {
+    header {
+     .container{
+        .navbar{
+          margin: 6px 0 0 30px;
+          .navbar-brand{
+            margin: 6px 0 0 5px;
+            width: 200px;
+            img{
+              width: 200px;
+  
+              margin: none;
+            }
+          }
+      
+          .nav-item{
+            margin: 35px 0 0 0;
+            .nav-link{
+              padding-right: none;
+            }
+          }
+        }
+      
+        .navbar-buttons{
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+           align-items: center;
+
+          .btn-number{
+            padding: 12px 20px;
+            margin: 26px 8px 0 10px;
+            font-size: 12px;
+          }
+      
+          .btn-language{
+            padding: 12px 20px;
+            margin: 26px 15px 0 0;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  
+  @include respond-to(xs) {
+    header {
+      .container{
+         .navbar{
+           margin: none;
+           .navbar-brand{
+             margin: 6px 0 0 5px;
+             width: 200px;
+             img{
+               width: 200px;
+   
+               margin: none;
+             }
+           }
+       
+           .nav-item{
+             margin: 35px 0 0 0;
+             .nav-link{
+               padding-right: none;
+             }
+           }
+         }
+       
+         .navbar-buttons{
+           display: flex;
+           flex-direction: row;
+           justify-content: flex-start;
+            align-items: center;
+ 
+           .btn-number{
+             padding: 12px 20px;
+             margin: 26px 8px 0 10px;
+             font-size: 11px;
+           }
+       
+           .btn-language{
+             padding: 12px 20px;
+             margin: 26px 0px 0 0;
+             font-size: 11px;
+           }
+         }
+       }
+     }
+  }
+ 

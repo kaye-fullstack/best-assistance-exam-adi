@@ -1,0 +1,802 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+footer{
+  margin-top: 100px;
+
+  .img-leaves{
+    width: 388px;
+
+    margin: -229px 0 44px 1334px;
+
+    z-index: 9;
+  }
+
+  .container{
+    .container-bg{
+      background-image:url("../assets/images/26.fw.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      padding-bottom: 4%;
+      height: 100%;
+
+      z-index: 5;
+
+      .content-box{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .content-wrapper{
+
+          &:nth-child(1){
+            width: 57%;
+          }
+
+          &:nth-child(2){
+            width: 43%;
+          }
+          .text{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+      
+            z-index: 13;
+      
+            .title{
+              margin: 29px 0 9px 120px;
+        
+              font-size: 37px;
+              font-weight: 700;
+              color: $white;
+            }
+        
+            .desc{
+              margin: 12px 21px 19px 118px;
+        
+              font-size: 18px;
+              color: $white;
+            }
+      
+            .logos{
+              display: flex;
+              flex-direction: row;
+              justify-content: flex-start;
+              align-items: center;
+        
+              .apple-logo{
+                margin: 11px 0 0 118px;
+                width: 18%;
+              }
+        
+              .google-logo{
+                margin: 11px 0 0 93px;
+                width: 20%;
+              }
+            }
+          }
+          .hand{
+            margin: -121px 10px 0px 54px;
+
+            z-index: 12;
+          }
+        }      
+      }
+
+      .content-holder{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-top: 1px solid $white;
+
+        .content-pockets{
+          padding: 40px 0 0 0;
+
+          &:nth-child(1){
+            width: 33.34%;
+
+            .logo{
+              position: absolute;
+              width: 63px;
+              margin: 9px 0 24px 100px;
+            }
+
+            .text{
+              font-size: 15px;
+              color: $white;
+    
+              margin: 86px 0 28px 105px;
+            }
+
+            u{
+              font-size: 15px;
+              color: #fff;
+              margin: 15px 0 0 103px;
+            }
+          }
+
+          &:nth-child(2){
+            width: 33.33%;
+
+            border-right: 1px solid $white;
+            border-left: 1px solid $white;
+
+            .text{
+              font-size: 15px;
+              color: $white;
+    
+              margin: 7px 0 0 64px;
+            }
+
+            .logo{
+              position: absolute;
+              width: 66px;
+              margin: -68px 0 0 63px;
+            }
+
+            u{
+              position: absolute;
+
+              font-size: 15px;
+              color: #fff;
+              margin: 48px 0 0 64px;
+            }
+          }
+
+          &:nth-child(3){
+            width: 33.33%;
+
+            .logo{
+              position: absolute;
+              width: 50px;
+  
+              margin: -90px 0 21px 60px;
+            }
+
+            .number{
+              position: absolute;
+              padding: 0 0 0 57px;
+
+              font-size: 36px;
+              font-weight: bold;
+              color: $white;
+            }
+
+            u{
+              position: absolute;
+
+              font-size: 15px;
+              color: $white;
+              margin: 71px 0 0 60px;
+            }
+          }
+        }
+      }
+
+      .content-envelope{
+        .desc{
+          &:nth-child(1){
+            width: 555px;
+            margin-top: -32px;
+            u{
+              margin: 0 0 0 116px;
+            }
+          }
+
+          &:nth-child(2){
+            width: 538px;
+            margin: -97px 0 0 535px;
+            u{
+              margin: 0 0 0 119px;
+            }
+          }
+
+          &:nth-child(3){
+            width: 538px;
+            margin: -86px 0 0 1218px;
+
+          }
+        }
+      }
+    }
+  }
+
+  .content-tupperware{
+    padding: 42px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .fb-logo{
+      margin-right: 7px;
+      width: 50px;
+    }
+
+    .ig-logo{
+      margin-right: 5px;
+      width: 50px;
+    }
+
+    .in-logo{
+      margin-right: 6px;
+      width: 50px;
+    }
+
+    .em-logo{
+      margin: -5px 16px 0 16px;
+      width: 52px;
+    }
+
+    .p-logo{
+      margin: -5px 73px 0 0;
+      width: 52px;
+    }
+  }
+
+  .content-holder{
+    ul{ 
+      position: relative;
+    
+      margin: 0;
+    
+      list-style-type: none;
+      li{ 
+        display: inline-block;
+        padding-left:35px;
+    
+        a{
+          font-size: 15px;
+          color:$dark-grey;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(lg) {
+  footer{
+    margin-top: 70px;
+  
+    .img-leaves{
+      margin: -172px 0 0 80%;
+      width: 17%;
+    }
+  
+    .container{
+      .container-bg{
+        .content-box{    
+          .content-wrapper{
+            .text{
+              .title{
+                margin: 29px 0 9px 67px;
+              }
+          
+              .desc{
+                margin: 12px 21px 19px 69px;
+              }
+        
+              .logos{
+                .apple-logo{
+                  margin: 11px 0 0 70px;
+                }
+              }
+            }
+            .hand{
+              margin: -121px 10px 0 5%;
+              width: 90%;
+            }
+          }      
+        }
+  
+        .content-holder{    
+          .content-pockets{
+            padding: 40px 0 0 0;
+  
+            &:nth-child(1){    
+              .logo{
+                width: 63px;
+                margin: 8px 0 10px 70px;
+              }
+
+              .text{
+                margin: 76px 20px 15px 70px;
+              }
+
+              u{
+                margin: 15px 0 0 68px;
+              }
+            }
+  
+            &:nth-child(2){
+              .logo{
+                position: absolute;
+                width: 66px;
+                margin: -60px 0 44px 70px;
+              }
+
+              .text{
+                padding: 29px 20px 0 5px;
+              }
+  
+              u{
+                margin: 18px 0 0 68px;
+              }
+            }
+  
+            &:nth-child(3){
+              .logo{
+                width: 50px;
+    
+                margin: -96px 0 0 70px;
+              }
+  
+              .number{
+                margin: -17px 20px 0 5px;
+              }
+      
+              u{
+                margin: 67px 0 0 68px;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .content-tupperware{
+      padding: 20px 42px;
+  
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      .fb-logo{
+        margin-right: 7px;
+        width: 50px;
+      }
+  
+      .ig-logo{
+        margin-right: 5px;
+        width: 50px;
+      }
+  
+      .in-logo{
+        margin-right: 6px;
+        width: 50px;
+      }
+  
+      .em-logo{
+        margin: -5px 16px 0 16px;
+        width: 52px;
+      }
+  
+      .p-logo{
+        margin: -5px 73px 0 0;
+        width: 52px;
+      }
+    }
+  
+    .content-holder{
+      ul{ 
+        position: relative;
+      
+        margin: 0;
+      
+        list-style-type: none;
+        li{ 
+          display: inline-block;
+          padding-left:35px;
+      
+          a{
+            font-size: 15px;
+            color:$dark-grey;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(md) {
+  footer{
+    margin-top: 70px;
+  
+    .img-leaves{
+      margin: -172px 0 0 80%;
+      width: 17%;
+    }
+  
+    .container{
+      .container-bg{
+        .content-box{    
+          .content-wrapper{
+            .text{
+              .title{
+                margin: 29px 0 9px 20%;
+                font-size: 32px;
+              }
+          
+              .desc{
+                margin: 12px 21px 19px 20%;
+                font-size: 15px;
+              }
+        
+              .logos{
+                margin-bottom: 3%;
+                .apple-logo{
+                  margin: 11px 0 0 30%;
+                  img{
+                    width: 155px;
+                  }
+                }
+                .google-logo{
+                  margin-left: 35%;
+                  img{
+                    width: 155px;
+                  }
+                }
+              }
+            }
+            .hand{
+              margin: -28% 10px 0 5%;
+              width: 90%;
+            }
+          }      
+        }
+  
+        .content-holder{    
+          .content-pockets{
+            padding: 40px 0 0 0;
+  
+            &:nth-child(1){    
+              .logo{
+                width: 60px;
+                margin: 8px 0 10px 5.7%;
+              }
+
+              .text{
+                margin: 76px 20px 15px 17%;
+              }
+
+              u{
+                margin: 15px 0 0 17%;
+              }
+            }
+  
+            &:nth-child(2){
+              .logo{
+                width: 60px;
+                margin: -5% 0 44px 6%;
+              }
+
+              .text{
+                padding: 29px 20px 0 5px;
+              }
+  
+              u{
+                margin: 1% 0 0 5%;
+              }
+            }
+  
+            &:nth-child(3){
+              .logo{
+                width: 45px;
+    
+                margin: -10% 0 0 6%;
+              }
+  
+              .number{
+                margin: -3% 20px 0 -2%;
+                font-size: 30px;
+              }
+      
+              u{
+                margin: 7% 0 0 6%;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .content-tupperware{
+      padding: 20px 15px;
+  
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .content-holder{
+        ul{ 
+          position: relative;
+        
+          margin: 0;
+        
+          list-style-type: none;
+          li{ 
+            display: inline-block;
+            padding-left:5px;
+        
+            a{
+              font-size: 14px;
+              color:$dark-grey;
+            }
+          }
+        }
+      }
+  
+      .fb-logo{
+        margin-right: 7px;
+        width: 50px;
+      }
+  
+      .ig-logo{
+        margin-right: 5px;
+        width: 50px;
+      }
+  
+      .in-logo{
+        margin-right: 6px;
+        width: 50px;
+      }
+  
+      .em-logo{
+        margin: -5px 16px 0 16px;
+        width: 52px;
+      }
+  
+      .p-logo{
+        margin: -5px 35px 0 0;
+        width: 52px;
+      }
+    }
+  }
+}
+
+@include respond-to(sm) {
+  footer{
+    margin-top: 70px;
+  
+    .img-leaves{
+      display: none;
+    }
+  
+    .container{
+      .container-bg{
+        .content-box{    
+          .content-wrapper{
+            .text{
+              .title{
+                margin: 29px 0 9px 8%;
+                font-size: 22px;
+              }
+          
+              .desc{
+                margin: 12px 21px 19px 8%;
+                font-size: 14px;
+              }
+        
+              .logos{
+                margin-bottom: 4%;
+                .apple-logo{
+                  margin: 11px 0 0 13%;
+                  img{
+                    width: 140px;
+                  }
+                }
+                .google-logo{
+                  margin-left: 35%;
+                  img{
+                    width: 140px;
+                  }
+                }
+              }
+            }
+            .hand{
+              margin: -4% 10px 0 5%;
+              width: 90%;
+            }
+          }      
+        }
+  
+        .content-holder{    
+          .content-pockets{
+            padding: 40px 0 0 0;
+  
+            &:nth-child(1){    
+              .logo{
+                width: 55px;
+                margin: 8px 0 10px 5.7%;
+              }
+
+              .text{
+                margin: 76px 20px 15px 17%;
+              }
+
+              u{
+                margin: 15px 0 0 17%;
+              }
+            }
+  
+            &:nth-child(2){
+              .logo{
+                width: 55px;
+                margin: -7% 0 44px 6%;
+              }
+
+              .text{
+                padding: 29px 20px 0 30px;
+                margin: 0;
+              }
+  
+              u{
+                margin: 3% 0 0 4%;
+              }
+            }
+  
+            &:nth-child(3){
+              .logo{
+                width: 40px;
+    
+                margin: -14% 0 0 6%;
+              }
+  
+              .number{
+                margin: -6% 20px 0 -2%;
+                font-size: 30px;
+              }
+      
+              u{
+                margin: 12% 0 0 6%;
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .content-tupperware{
+      padding: 16px 30px;
+  
+      .fb-logo{
+        margin-right: 7px;
+        width: 40px;
+      }
+  
+      .ig-logo{
+        margin-right: 5px;
+        width: 40px;
+      }
+  
+      .in-logo{
+        margin-right: 2px;
+        width: 40px;
+      }
+  
+      .em-logo{
+        margin: -5px 5px 0 5px;
+        width: 45px;
+      }
+  
+      .p-logo{
+        margin: -5px 0 0 0;
+        width: 45px;
+      }
+    }
+  
+    .content-holder{
+      ul{ 
+        position: relative;
+      
+        margin: 0;
+        padding: 0;
+      
+        list-style-type: none;
+        li{ 
+          display: inline-block;
+          padding-left: 5px;
+      
+          a{
+            font-size: 15px;
+            color:$dark-grey;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 596px) and (max-width: 677px) {
+  footer{ 
+    .container{
+      .container-bg{
+        .content-holder{    
+          .content-pockets{
+            &:nth-child(3){    
+              u{
+                margin: 16% 0 0 6%;
+              }
+            }
+          }
+        }
+      }
+      .content-tupperware{
+        padding: 16px 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 595px) {
+  footer{ 
+    .container{
+      .container-bg{
+        .content-holder{    
+          .content-pockets{
+            &:nth-child(3){    
+              u{
+                margin: 17% 0 0 6%;
+              }
+            }
+          }
+        }
+      }
+      .content-tupperware{
+        padding: 16px 10px;
+      }
+    }
+  }
+}
+
+@include respond-to(xs) {
+  footer {
+    .content-tupperware{
+      padding: 15px 0;
+  
+      .fb-logo{
+        margin-right: 7px;
+        width: 36px;
+      }
+  
+      .ig-logo{
+        margin-right: 7px;
+        width: 36px;
+      }
+  
+      .in-logo{
+        margin-right: 0px;
+        width: 36px;
+      }
+  
+      .em-logo{
+        margin: -5px 10px 0 10px;
+        width: 38px;
+      }
+  
+      .p-logo{
+        margin: -5px 25px 0 0;
+        width: 38px;
+      }
+    }
+  
+    .content-holder{
+      ul{ 
+        margin: 0;
+        padding: 0px 0 0 20px;
+        li{ 
+          padding-left:8px;
+          a{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

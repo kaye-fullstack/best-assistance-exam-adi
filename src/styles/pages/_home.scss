@@ -1,0 +1,1322 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+.home {
+  transition: all .2s ease-in-out;
+  
+  .section-intro {
+    padding-bottom: 215px;
+
+    background-image: url("../assets/images/3.fw.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .swiper-container{
+      margin-top: 87px;
+
+      border: none;
+      overflow: hidden;
+
+      .swiper-slide{
+        padding: 0 0 0 118px;
+      }
+
+      h1{
+        margin: 149px 930px 0 0;
+  
+        width: 565px;
+  
+        font-size: 60px;
+        color: $white;
+        text-align: left;
+      }
+
+      .title2{
+        margin: 149px 930px 0 0;
+
+        width: 565px;
+  
+        font-size: 60px;
+        color: $white;
+        text-align: left;
+      }
+    }
+
+    .swiper-pagination{
+      margin: 0 0 0 7%;
+
+      text-align: left;
+    }
+
+    .logos{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+
+      padding-top: 40px;
+
+      .content-wrapper{
+        margin-bottom: 50px;
+        width: 80px;
+      }
+
+      .first{
+        margin: 14px 0 0 117px;
+        width: 58px;
+      }
+
+      .second{
+        margin: 13px 0 0 166px;
+        width: 58px;
+      }
+
+      .third{
+        margin: 13px 0 0 210px;
+        width: 59px;
+      }
+    }
+
+    .logos-text{
+      .text{
+        text-align: center;
+        .first-text{
+          margin: -37px 0 0 112px;
+
+          font-size: 15px;
+          font-weight: bold;
+          color: $white;
+        }
+
+        .second-text{
+          margin: -41px 0 0 230px;
+          width: 90px;
+
+          font-size: 15px;
+          font-weight: bold;
+          color: $white;
+        }
+
+        .third-text{
+          margin: -42px 0 0 353px;
+          width: 90px;
+
+          font-size: 15px;
+          font-weight: bold;
+          color: $white;
+        }
+      }
+    }
+
+    p{
+      width: 70px;
+    }
+
+    .sidebar-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      position: fixed;
+      margin: 300px 0 0 1773px;
+
+      width: 58px;
+      height: 260px;
+
+      background-color: $white;
+
+      .fb-logo{
+        flex-grow: 1;
+        margin: 13px 0 6px 0;
+
+        width: 9px;
+      }
+
+      .ig-logo{
+        margin: 0 5px 21px 0;
+
+        width: 9px;
+      }
+
+      .in-logo{
+        margin: 0 5px 22px 0;
+
+        width: 9px;
+      }
+
+      .share-logo{
+        margin: 0 5px 25px 0;
+
+        width: 9px;
+      }
+
+      .phone-logo{
+        margin: 0 0 9px 4px;
+   
+        width: 9px;
+      }
+    }
+  }
+
+  .section-mission{
+    padding-bottom: 34px;
+    background-color: $white;
+
+    .content-wrapper{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+
+    }
+
+    .content-holder {
+      .title{
+        font-size: 41px;
+        font-weight: bold;
+        color: $black;
+
+        margin: -203px 0 0 43px;
+      }
+
+      .img{
+        margin: -75px 0 81px 99px;
+        width: 343px;
+      }
+
+      .content-pocket{
+        width: 310px;
+
+        &:nth-child(2){
+          margin: 13px;
+        }
+
+        &:nth-child(3){
+          margin: 11px;
+        }
+
+        &:nth-child(4){
+          margin: 10px;
+        }
+
+        &:nth-child(5){
+          margin: 12px;
+        }
+
+        &:nth-child(6){
+          margin: 0 0 0 12px;
+        }
+
+        .bullet-point{
+          margin-left: 44px; 
+          width: 24px;
+
+          vertical-align:middle;
+        }
+
+        .missions{
+          font-size: 15px;
+        }
+
+        .btn-blue{
+          position: absolute;
+          margin: 4.2% 0 0 2%;
+          padding: 18px 29px;
+
+          font-size: 15px;
+          color: $white;
+
+          border: none;
+          background-image: url("../assets/images/14.fw.png");
+          background-repeat: no-repeat;
+        }
+
+        .btn-yellow{
+          position: absolute;
+          margin: 4.2% 0 0 13%;
+
+          padding: 18px 29px;
+          width: 200px;
+
+          font-size: 15px;
+          color: $white;
+
+          background-color: $light-yellow;
+          border: none;
+          border-radius: 27px;
+        }
+      }
+    }
+
+    .box{ 
+      position: relative;
+      margin: 56px 0 0 172px;
+  
+      width: 690px;
+      height: 800px;
+  
+      background-image: url("../assets/images/9.fw.png");
+      background-position: center;
+      background-repeat: no-repeat;
+  
+      z-index: 9;
+  
+      .title{
+        padding: 210px 0 0 69px;
+
+        font-size: 40px;
+        color: $white;
+  
+        z-index: 11;
+      }
+    
+      .content-pocket{
+        .logos{
+          .first-logo{
+            position: relative;
+            margin: 20px 0 0 102px;
+            width: 43px;
+          }
+
+          .second-logo{
+            position: relative;
+            margin: 3px 0 0 104px;
+            width: 40px;
+          }
+
+          .third-logo{
+            position: relative;
+            margin: 2px 0 0 103px;
+            width: 46px;
+          }
+
+          .fourth-logo{
+            position: relative;
+            margin: -1px 0 0 106px;
+            width: 40px;
+          }
+
+          .small-title{
+            z-index: 12;
+
+            margin:-47px 0 15px 178px;
+            width: 176px;
+
+            font-size: 18px;
+            font-weight: bold;
+            color: $white;
+          }
+
+          .small-desc{
+            z-index: 12;
+
+            margin: -12px 0 33px 176px;
+            width: 390px;
+
+            font-size: 18px;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  .section-healthy{
+    margin-bottom: 197px;
+    .title{
+      font-size: 40px;
+      font-weight: bold;
+
+      margin-left: 116px;
+      margin-bottom: 7px;
+    }
+
+    .desc{
+      font-size: 15px;
+      font-weight: bold;
+
+      margin-left: 116px;
+    }
+
+    .swiper-container{
+      padding: 20px 0 0 116px;
+
+    .swiper-wrapper{
+      transition-duration: none;
+      transform: none;
+      
+      .swiper-slide{  
+        font-size: 28px;
+        font-weight: bold;
+        color: $white;
+        line-height: 35px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:nth-child(1n){
+        width: 745px;   
+
+          .caption{
+            position: absolute;
+        
+            margin: 270px 0 0 -435px;
+            width: 240px;
+      
+            line-height: 35px;
+            z-index: 13;
+          }
+
+          .desc{
+            position: absolute;
+            
+            margin: 402px 609px -85px 0px;
+            width: 62px;
+            height: 25px;
+
+            font-size: 13px;
+            text-align: center;
+
+            background-color: $yellow;
+
+            z-index: 13;
+          }       
+        }
+
+        &:nth-child(2n){
+          width: 371px;
+
+          .caption{
+            position: absolute;
+        
+            margin: 272px 0 0 -24px;
+            width: 282px;
+      
+            z-index: 13;
+          }
+
+          .desc{
+            position: absolute;
+            
+            margin: 402px 198px -85px 0px;
+            width: 102px;
+            height: 26px;
+
+            font-size: 13px;
+            text-align: center;
+
+            background-color: $light-green;
+
+            z-index: 13;
+          }
+        }
+
+        &:nth-child(3n){
+          width: 371px;
+
+          .caption{
+            position: absolute;
+        
+            margin: 270px 0 0 -52px;
+            width: 240px;
+      
+            line-height: 35px;
+            z-index: 13;
+          }
+          .desc{
+            position: absolute;
+            
+            margin: 402px 179px -85px 0px;
+            width: 124px;
+            height: 26px;
+
+            font-size: 13px;
+            text-align: center;
+
+            background-color: $blue;
+
+            z-index: 13;
+          }
+        }
+
+        img{
+          z-index: 12;
+        }
+      }
+    }
+  }
+    .btn{
+      position: absolute;
+      margin: 72px 0 0 113px;
+
+      padding: 18px 64px;
+
+      font-size: 15px;
+      color: $white;
+
+      border: none;
+      background-image: url("../assets/images/20.fw.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .section-is{
+    padding: 190px 0 100px 0;
+    background-image:url("../assets/images/21.fw.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .content-wrapper{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+
+      .img{
+        position: relative;
+
+        margin: 41px 0 0 136px;
+      }
+
+      .content-holder{
+        .title{
+          position: relative;
+          margin: -113px 0 0 135px;
+
+          font-size: 43px;
+          font-weight: bold;
+          color: $black;
+        }
+
+        .title-blue{
+          position: relative;
+          margin: -15px 0 33px 133px;
+
+          font-size: 43px;
+          font-weight: bold;
+          color: $dark-blue;
+        }
+
+        .desc{
+          position: relative;
+
+          margin: 29px 0 45px 132px;
+          width: 777px;
+
+          font-size: 18px;
+          line-height: 30px;
+
+          color: $black;
+        }
+
+        .content-features{
+          position: relative;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+
+          .content-pocket1{
+            position: relative;
+
+            margin: 4px 0 12px 0;
+            padding: 0 0 0 131px;
+            width: 939px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            .text{
+              margin: 0 0 0 20px;
+              font-size: 16px;
+              font-weight: bold;
+              color: $black;
+            }
+
+            .bullet-point{
+              width: 28px;
+            }
+          }
+
+          .content-pocket2{
+            position: relative;
+            padding: 7px 0 11px 0;
+            left: 131px;
+
+            width: 939px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            .text{
+              margin: 2px 0 0 20px;
+              font-size: 16px;
+              font-weight: bold;
+              color: $black;
+            }
+
+            .bullet-point{
+              width: 28px;
+            }
+          }
+
+          .content-pocket3{
+            position: relative;
+            padding: 8px 0 16px 0;
+            left: 131px;
+
+            width: 939px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            .text{
+              margin: 4px 0 0 20px;
+              font-size: 16px;
+              font-weight: bold;
+              color: $black;
+            }
+
+            .bullet-point{
+              width: 28px;
+            }
+          }
+        }
+
+        .btn{
+          position: absolute;
+          padding: 18px 64px;
+          margin: 36px 0 0 136px;
+    
+          font-size: 15px;
+          color: $white;
+    
+          border: none;
+          background-image: url("../assets/images/20.fw.png");
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(lg) {
+  .home {
+    .section-intro {  
+      .swiper-container{
+        margin-top: 87px;
+  
+        .swiper-slide{
+          padding: 0 0 45px 118px;
+        }
+  
+        h1{
+          margin: 149px 930px 0 0;
+    
+          width: 565px;
+    
+          line-height: 1.2;
+        }
+  
+        .title2{
+          margin: 149px 930px 0 0;
+  
+          width: 565px;
+    
+          line-height: 1.2;
+        }
+      }
+  
+      .swiper-pagination{
+        margin: 1% 0 0 10%;
+      }
+  
+      .logos{  
+        padding-top: 40px;
+  
+        .content-wrapper{
+          margin-bottom: 50px;
+          width: 80px;
+        }
+  
+        .first{
+          margin: 14px 0 0 117px;
+          width: 58px;
+        }
+  
+        .second{
+          margin: 13px 0 0 166px;
+          width: 58px;
+        }
+  
+        .third{
+          margin: 13px 0 0 210px;
+          width: 59px;
+        }
+      }
+  
+      .logos-text{
+        .text{
+          text-align: center;
+          .first-text{
+            margin: -37px 0 0 112px;
+  
+            font-size: 15px;
+            font-weight: bold;
+            color: $white;
+          }
+  
+          .second-text{
+            margin: -41px 0 0 230px;
+            width: 90px;
+  
+            font-size: 15px;
+            font-weight: bold;
+            color: $white;
+          }
+  
+          .third-text{
+            margin: -42px 0 0 355px;
+            width: 90px;
+  
+            font-size: 15px;
+            font-weight: bold;
+            color: $white;
+          }
+        }
+      }
+  
+      p{
+        width: 70px;
+      }
+  
+      .sidebar-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+  
+        position: fixed;
+        margin: 300px 0 0 1773px;
+  
+        width: 58px;
+        height: 260px;
+  
+        background-color: $white;
+  
+        .fb-logo{
+          flex-grow: 1;
+          margin: 13px 0 6px 0;
+  
+          width: 9px;
+        }
+  
+        .ig-logo{
+          margin: 0 5px 21px 0;
+  
+          width: 9px;
+        }
+  
+        .in-logo{
+          margin: 0 5px 22px 0;
+  
+          width: 9px;
+        }
+  
+        .share-logo{
+          margin: 0 5px 25px 0;
+  
+          width: 9px;
+        }
+  
+        .phone-logo{
+          margin: 0 0 9px 4px;
+     
+          width: 9px;
+        }
+      }
+    }
+  
+    .section-mission{
+      padding-bottom: 45px;
+
+      .content-holder {
+
+        &:nth-child(1n){
+          width: 50%
+        }
+        &:nth-child(2n){
+          width: 50%
+        }
+
+        .title1{  
+          margin: -220px 0 0 40px;
+        }
+
+        .title2{  
+          margin: -220px 0 0 40px;
+        }
+  
+        .img{
+          margin: 70px 90px 190px 20%;
+          width: 350px;
+        }
+  
+        .content-pocket{
+          width: 400px;
+  
+          .missions{
+            font-size: 18px;
+          }
+  
+          .btn-blue{
+            margin: 50px 0 0 30px;
+            padding: 18px 29px;
+          }
+  
+          .btn-yellow{
+            margin: 50px 0 0 25%;
+            padding: 18px 29px;
+          }
+        }
+      }
+  
+      .box{ 
+        margin: 55px 0 0 45%;
+    
+        .title{
+          padding: 210px 0 0 69px;
+        }
+      }
+    }
+
+    .section-healthy{
+      margin-bottom: 25px;
+
+      .title{
+        margin-left: 120px;
+      }
+
+      .desc{
+        margin-left: 122px;
+      }
+
+      .swiper-container{
+        padding: 20px 0 80px 124px;
+      }
+
+      .btn{
+        margin: -30px 0 0 122px;
+      }
+    }
+
+    .section-is{
+      padding: 0px 0 175px 0;
+  
+      .content-wrapper{
+        .img{  
+          margin: 160px 0 0 26%;
+          width: 475px;
+        }
+  
+        .content-holder{
+          .title{
+            margin: 50px 0 0 13%;
+          }
+  
+          .title-blue{
+            margin: -15px 0 33px 13%;
+          }
+  
+          .desc{
+            margin: -29px 0 45px 13%;
+          }
+  
+          .content-features{  
+            .content-pocket1{
+              margin: 4px 0 12px -2%;
+            }
+  
+            .content-pocket2{
+              padding: 7px 0 11px 13%; 
+              left: 0;
+            }
+  
+            .content-pocket3{
+              padding: 8px 0 16px 13%;
+              left: 0;
+            }
+          }
+  
+          .btn{
+            padding: 18px 53px;
+            margin: 36px 0 0 10%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1075px){
+  .section-mission{
+
+    .box{ 
+      margin: 55px 0 0 30% !important;
+    }
+  }
+}
+
+@include respond-to(md) {
+  .home {
+    .section-intro {
+      padding-bottom: 80px;
+      .swiper-container{
+        .swiper-slide{
+          padding: 0 0 0 80px;
+        }
+      }
+
+      .swiper-pagination{
+        margin: 1% 0 0 10%;
+      }
+  
+      .logos{  
+        .content-wrapper{
+          margin-bottom: 50px;
+          width: 80px;
+        }
+  
+        .first{
+          margin: 14px 0 0 83px;
+          width: 65px;
+        }
+  
+        .second{
+          margin: 13px 0 0 150px;
+          width: 65px;
+        }
+  
+        .third{
+          margin: 13px 0 0 210px;
+          width: 65px;
+        }
+      }
+  
+      .logos-text{
+        .text{
+          text-align: center;
+          .first-text{
+            margin: -37px 0 0 82px;
+  
+            font-size: 18px;
+          }
+  
+          .second-text{
+            margin: -53px 0 0 209px;
+            width: 105px;
+  
+            font-size: 18px;
+          }
+  
+          .third-text{
+            margin: -49px 0 0 359px;
+            width: 90px;
+  
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    .section-mission{
+      padding-bottom: 34px;
+
+      .content-holder {
+
+        &:nth-child(1n){
+          width: 40%
+        }
+        &:nth-child(2n){
+          margin-top: 8%;
+          width: 60%
+        }
+
+        .img{
+          margin: 40px 40px 80px 15%;
+          width: 280px;
+        }
+        .title{  
+          margin: -130px 0 0 43px;
+          font-size: 35px;
+        }
+  
+        .content-pocket{
+          .btn-blue{
+            margin: 4.2% 0 0 5%;
+            padding: 14px 14px 16px 0;
+            width: 190px;
+
+            font-size: 14px;
+
+            background-size: 90%;
+          }
+
+          .btn-yellow{
+            margin: 4.2% 0 0 28%;
+            padding: 14px 12px;
+
+            width: 175px;
+          }
+        }
+      }
+  
+      .box{ 
+        margin: 170px 0 0 38%;
+
+        background-size: 100% 100%;
+      }
+    }
+
+    .section-healthy{
+      margin-bottom: 25px;
+
+      .title{
+        margin-left: 79px;
+      }
+
+      .desc{
+        margin-left: 80px;
+      }
+
+      .swiper-container{
+        padding: 20px 0 80px 82px;
+      }
+
+      .btn{
+        margin: -30px 0 0 82px;
+      }
+    }
+
+    .section-is{
+      padding: 0px 0 175px 0;
+  
+      .content-wrapper{
+        .img{  
+          margin: 160px 0 0 17%;
+          width: 475px;
+        }
+  
+        .content-holder{
+          .title{
+            margin: 50px 0 0 9%;
+          }
+  
+          .title-blue{
+            margin: -15px 0 33px 9%;
+          }
+  
+          .desc{
+            margin: -29px 0 45px 9%;
+            width: 680px;
+          }
+  
+          .content-features{  
+            .content-pocket1{
+              margin: 4px 0 12px -10%;
+            }
+  
+            .content-pocket2{
+              padding: 7px 0 11px 9%; 
+              left: 0;
+            }
+  
+            .content-pocket3{
+              padding: 8px 0 16px 9%;
+              left: 0;
+            }
+          }
+  
+          .btn{
+            padding: 18px 53px;
+            margin: 36px 0 0 8%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 800px) and (max-width: 900px){
+  .box{ 
+    margin: 170px 0 0 25% !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 800px){
+  .box{ 
+    margin: 170px 0 0 16% !important;
+  }
+  .section-is{
+    padding: 0px 0 175px 0;
+      .content-holder{
+        .desc{
+          margin: -29px 0 45px 9%;
+          width: 620px !important;
+        }
+
+        .btn{
+          padding: 18px 53px;
+          margin: 36px 0 0 11% !important;
+        }
+      }
+    }
+  
+}
+
+@include respond-to(sm) {
+  .home {
+    .section-intro {
+      padding-bottom: 80px;
+      .swiper-container{
+        h1{
+          margin: 149px 930px 0 -30px;
+        }
+        .swiper-slide{
+          padding: 0 0 0 80px;
+        }
+      }
+
+      .swiper-pagination{
+        margin: 1% 0 0 10%;
+      }
+  
+      .logos{  
+        .content-wrapper{
+          margin-bottom: 50px;
+          width: 80px;
+        }
+  
+        .first{
+          margin: 14px 0 0 54px;
+          width: 65px;
+        }
+  
+        .second{
+          margin: 13px 0 0 118px;
+          width: 65px;
+        }
+  
+        .third{
+          margin: 13px 0 0 176px;
+          width: 65px;
+        }
+      }
+  
+      .logos-text{
+        .text{
+          text-align: center;
+          .first-text{
+            margin: -37px 0 0 52px;
+  
+            font-size: 18px;
+          }
+  
+          .second-text{
+            margin: -53px 0 0 180px;
+            width: 105px;
+  
+            font-size: 18px;
+          }
+  
+          .third-text{
+            margin: -49px 0 0 325px;
+            width: 90px;
+  
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    
+    .section-mission{
+      padding-bottom: 34px;
+
+      .content-holder {
+        &:nth-child(1n){
+          width: 40%
+        }
+
+        &:nth-child(2n){
+          margin-top: 8%;
+          width: 60%
+        }
+
+        .img{
+          margin: 50px 0 80px 12%;
+          width: 235px;
+        }
+
+        .title{  
+          margin: -130px 0 0 43px;
+          font-size: 32px;
+        }
+  
+        .content-pocket{
+          .bullet-point{
+            margin-left: 20%; 
+            width: 22px;
+          }
+  
+          .missions{
+            font-size: 14px;
+          }
+
+          .btn-blue{
+            margin: 3.2% 0 0 5%;
+            padding: 14px 14px 16px 0;
+            width: 190px;
+
+            font-size: 14px;
+
+            background-size: 90%;
+          }
+
+          .btn-yellow{
+            margin: 80px 0 0 5%;
+            padding: 14px 12px;
+
+            width: 175px;
+          }
+        }
+      }
+  
+      .box{ 
+        margin: 180px 0 0 12%;
+
+        background-size: 90% 90%;
+      }
+    }
+
+    .section-healthy{
+      margin-bottom: 25px;
+
+      .title{
+        margin-left: 52px;
+      }
+
+      .desc{
+        margin-left: 54px;
+      }
+
+      .swiper-container{
+        padding: 20px 0 80px 54px;
+      }
+
+      .btn{
+        margin: -30px 0 0 52px;
+      }
+    }
+
+    .section-is{
+      padding: 0px 0 175px 0;
+  
+      .content-wrapper{
+        .img{  
+          margin: 160px 0 0 11%;
+          width: 475px;
+        }
+  
+        .content-holder{
+          .title{
+            margin: 50px 0 0 6%;
+            font-size: 35px;
+          }
+  
+          .title-blue{
+            margin: -15px 0 33px 6%;
+            font-size: 35px;
+          }
+  
+          .desc{
+            margin: -29px 0 45px 6%;
+            width: 580px;
+          }
+  
+          .content-features{  
+            .content-pocket1{
+              margin: 4px 0 12px -16%;
+            }
+  
+            .content-pocket2{
+              padding: 7px 0 11px 6%; 
+              left: 0;
+            }
+  
+            .content-pocket3{
+              padding: 8px 0 16px 6%;
+              left: 0;
+            }
+          }
+  
+          .btn{
+            padding: 18px 53px;
+            margin: 36px 0 0 7%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 661px) and (max-width: 700px){
+
+  .box{ 
+    margin: 130px 0 0 0% !important;
+
+    background-size: 85% 85% !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 660px){
+
+
+  .box{ 
+    margin: 120px 0 0 -24% !important;
+
+    background-size: 80% 80% !important;
+  }
+
+  .section-is{
+    .content-wrapper{
+      .content-holder{
+        .desc{
+          margin: -29px 0 45px 6%;
+          width: 520px !important;
+        }
+
+        .btn{
+          padding: 18px 53px;
+          margin: 36px 0 0 10% !important;
+        }
+      }
+    }
+  }
+}
