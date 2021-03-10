@@ -12,53 +12,93 @@ header {
 
         margin: 6px 0 0 100px;
       }
-      .nav-item{
-        margin: 30px 29px 0 0;
-      }
-      ul{
-        a{
-          font-size: 14px;
-          color: $mid-grey; 
+
+      .switcheroo{
+        margin: 0 0 0 19%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+
+        .nav-item{
+          margin: 30px 29px 0 0;
         }
+
+        ul{
+          a{
+            font-size: 14px;
+            color: $mid-grey; 
+          }
+        }
+
+        .navbar-buttons{
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: center;
+    
+          .btn-number{
+            padding: 13px 19px;
+            margin: 26px 3px 0 20px;
+    
+            font-size: 15px;
+            color: $white;
+    
+            background-color: $orange;
+            border: none;
+            border-radius: 37px;
+            img{
+              padding-right: 8px;
+            }
+          }  
+    
+          .btn-language{
+            padding: 13px 20px;
+            margin: 26px 80px 0 0;
+    
+            font-size: 15px;
+            color: $white;
+    
+            background-color: $dark-blue;
+            border: none;
+            border-radius: 37px;
+    
+            img{
+              padding-left: 8px;
+            }
+          }          
+        }        
       }
     }
+  }
+}
 
-    .navbar-buttons{
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      align-items: center;
-
-      .btn-number{
-        padding: 13px 19px;
-        margin: 26px 3px 0 20px;
-
-        font-size: 15px;
-        color: $white;
-
-        background-color: $orange;
-        border: none;
-        border-radius: 37px;
-        img{
-          padding-right: 8px;
+@media (min-width: 1921px) and (max-width: 2000px){
+  header {
+    .container{
+      padding: 0;
+      .navbar{
+        .navbar-brand{
+          margin: 2px 0 0 -2.2%;
         }
-      }  
-
-      .btn-language{
-        padding: 13px 20px;
-        margin: 26px 101px 0 0;
-
-        font-size: 15px;
-        color: $white;
-
-        background-color: $dark-blue;
-        border: none;
-        border-radius: 37px;
-
-        img{
-          padding-left: 8px;
+        .nav-item{
+          padding: 0;
         }
-      }          
+
+        .navbar-buttons{  
+          .btn-number{
+            margin: 22px -42px 0 5%;
+            img{
+              padding-right: 8px;
+            }
+          }  
+    
+          .btn-language{
+            margin: 24px 0 0 70%;
+          }          
+        }
+      }
     }
   }
 }
@@ -68,7 +108,7 @@ header {
     .container{
       .navbar{
         .navbar-brand{
-          margin: 6px 0 0 10px;
+          margin: 6px 0 0 50px;
           width: 200px;
           img{
             width: 200px;
@@ -77,102 +117,196 @@ header {
           }
         }
   
-        .nav-item{
-          margin: 35px 0 0 0;
-        }
-      }
-  
-      .navbar-buttons{
-        .btn-number{
-          margin: 15px 3px 0 15px;
-          padding: 10px 19px;
-        }
+        .switcheroo{
+          margin: 0 0 0 2%;
+          width: 79%;
 
-        .btn-language{
-          margin: 19px 12px 0 0;
-          padding: 10px 18px;
-        }        
+          .nav-item{
+            margin: 35px 0 0 0;
+          }
+          
+          .navbar-buttons{
+            .btn-number{
+              margin: 15px 3px 0 15px;
+              padding: 10px 19px;
+            }
+    
+            .btn-language{
+              margin: 19px 12px 0 0;
+              padding: 10px 18px;
+            }        
+          }
+        }
       }
     }
   }
 }
 
-  @media (min-width: 992px) and (max-width: 1090px) {
-    header {
-      .container{
-        .navbar{
-          .navbar-brand{
-            margin: 6px 0 0 5px;
-          }
-          .btn-number{
-            margin: 26px 5px 0 5px;
-
-            font-size: 13px;
-          }
-          .btn-language{
-            margin: 26px 5px 0 0;
-
-            font-size: 13px;
-          }
+@media (min-width: 1091px) and (max-width: 1116px) {
+  header {
+    .container{
+      .navbar{
+        .navbar-brand{
+          margin: 6px 0 0 30px;
+        }
+        .switcheroo{
+          margin: 0 0 0 0;  
         }
       }
     }
   }
+}
 
-  @include respond-to(md) {
-    header {
-      .container{
-        .navbar{
-          .navbar-brand{
-            margin: 6px 0 0 25px;
-            width: 200px;
-            img{
-              width: 200px;
+@media (min-width: 992px) and (max-width: 1090px) {
+  header {
+    .container{
+      .navbar{
+        .navbar-brand{
+          margin: 6px 0 0 5px;
+        }
 
-              margin: none;
+        .switcheroo{
+          margin: 0 0 0 0;  
+          ul{
+            a{
+              font-size: 13px;
             }
           }
-    
+
+          .btn-number{
+            margin: 26px 5px 0 5px !important;
+          }
+          .btn-language{
+            margin: 26px 5px 0 0 !important;
+          }          
+        }   
+      }
+    }
+  }
+}
+
+@include respond-to(md) {
+  header {
+    .container{
+      .navbar{
+        margin-right: 8%;
+        .navbar-brand{
+          margin: 6px 0 0 8%;
+          width: 200px;
+        }
+  
+        .switcheroo{
+          margin: 0;
+
+          flex-direction: row-reverse;
+          .nav-item{
+            margin: 35px 0 0 0;
+          }
+
+          .navbar-buttons{
+            .btn-number{
+              margin: 0 20px 0 20px;
+              font-size: 13px;
+            }
+      
+            .btn-language{
+              margin: 0 20px 0 0;
+              font-size: 13px;
+            }
+          }
+        }
+        
+      }
+    }
+  }
+} 
+
+@include respond-to(sm) {
+  header {
+    .container{
+      .navbar{
+        margin: 6px 3% 0 0 !important;
+
+        .navbar-brand{
+          margin: 0 0 0 5%;
+          width: 200px;
+          img{
+            width: 200px;
+          }
+        }
+
+        .switcheroo{
+          margin: 0 1.3% 0 2%;
+
+          flex-direction: row-reverse;
+      
           .nav-item{
             margin: 35px 0 0 0;
             .nav-link{
               padding-right: none;
             }
           }
-        }
-    
-        .navbar-buttons{
-          display: flex;
-          flex-direction: row;
-          justify-content: flex-start;
-          align-items: center;
 
-          .btn-number{
-            margin: 26px 20px 0 20px;
-            font-size: 13px;
-          }
-    
-          .btn-language{
-            margin: 26px 20px 0 0;
-            font-size: 13px;
+          .navbar-buttons{
+            .btn-number{
+              padding: 12px 20px;
+              margin: 0 8px 0 0;
+              font-size: 12px;
+            }
+        
+            .btn-language{
+              padding: 12px 20px;
+              margin: 0 15px 0 0;
+              font-size: 12px;
+            }
           }
         }
-      }
+
+        .collapse {
+          position: fixed;
+          top: 84px;
+          right: -100%;
+          z-index: 2000;
+  
+          display: block;
+          height: 100% !important;
+          width: 0;
+          padding: 0 0 0 5.5%;
+  
+          background-color: $white;
+  
+          transition: all .3s ease;
+        }
+        
+        .collapsing {
+          position: fixed;
+
+          display: block;
+          width: 100%;
+          height: 100% !important;
+
+          transition: all .3s ease-in;
+        }
+        
+        .collapse.show {
+            right: 0;
+            width: 100%;
+        }
+      }    
     }
-  } 
+  }
+}
 
-  @include respond-to(sm) {
-    header {
-     .container{
+@include respond-to(xs) {
+  header {
+    .container{
         .navbar{
-          margin: 6px 0 0 30px;
+          margin: none;
           .navbar-brand{
             margin: 6px 0 0 5px;
             width: 200px;
             img{
               width: 200px;
-  
-              margin: none;
             }
           }
       
@@ -185,69 +319,19 @@ header {
         }
       
         .navbar-buttons{
-          display: flex;
-          flex-direction: row;
-          justify-content: flex-start;
-           align-items: center;
-
           .btn-number{
             padding: 12px 20px;
             margin: 26px 8px 0 10px;
-            font-size: 12px;
+            font-size: 11px;
           }
       
           .btn-language{
             padding: 12px 20px;
-            margin: 26px 15px 0 0;
-            font-size: 12px;
+            margin: 26px 0px 0 0;
+            font-size: 11px;
           }
         }
       }
     }
-  }
-  
-  @include respond-to(xs) {
-    header {
-      .container{
-         .navbar{
-           margin: none;
-           .navbar-brand{
-             margin: 6px 0 0 5px;
-             width: 200px;
-             img{
-               width: 200px;
-   
-               margin: none;
-             }
-           }
-       
-           .nav-item{
-             margin: 35px 0 0 0;
-             .nav-link{
-               padding-right: none;
-             }
-           }
-         }
-       
-         .navbar-buttons{
-           display: flex;
-           flex-direction: row;
-           justify-content: flex-start;
-            align-items: center;
- 
-           .btn-number{
-             padding: 12px 20px;
-             margin: 26px 8px 0 10px;
-             font-size: 11px;
-           }
-       
-           .btn-language{
-             padding: 12px 20px;
-             margin: 26px 0px 0 0;
-             font-size: 11px;
-           }
-         }
-       }
-     }
-  }
+}
  

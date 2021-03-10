@@ -31,8 +31,8 @@
         width: 565px;
   
         font-size: 60px;
+        font-weight: bold;
         color: $white;
-        text-align: left;
       }
 
       .title2{
@@ -42,14 +42,11 @@
   
         font-size: 60px;
         color: $white;
-        text-align: left;
       }
     }
 
     .swiper-pagination{
-      margin: 0 0 0 7%;
-
-      text-align: left;
+      margin: 0 0 0 -42%;
     }
 
     .logos{
@@ -118,14 +115,15 @@
     }
 
     .sidebar-item {
+      position: fixed;
+      z-index: 20;
+
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
 
-      position: fixed;
-      margin: 300px 0 0 1773px;
-
+      margin: 300px 0 0 93.5%;
       width: 58px;
       height: 260px;
 
@@ -174,7 +172,6 @@
       flex-wrap: wrap;
       justify-content: flex-start;
       align-items: center;
-
     }
 
     .content-holder {
@@ -277,7 +274,7 @@
         z-index: 11;
       }
     
-      .content-pocket{
+      .content-pocket2{
         .logos{
           .first-logo{
             position: relative;
@@ -617,140 +614,256 @@
   }
 }
 
-@include respond-to(lg) {
-  .home {
-    .section-intro {  
+@media (min-width: 1921px) and (max-width: 2000px){
+  .home {    
+    .section-intro {
+      padding-bottom: 12.7%;
+  
       .swiper-container{
         margin-top: 87px;
   
-        .swiper-slide{
-          padding: 0 0 45px 118px;
+        .swiper-wrapper{
+          .swiper-slide{
+            padding: 0 0 3.3% 0;
+          }
         }
   
         h1{
-          margin: 149px 930px 0 0;
+          margin: 12.6% 0 0 -8px;
     
-          width: 565px;
+          width: 580px;
     
-          line-height: 1.2;
+          letter-spacing: 1px;
         }
   
         .title2{
           margin: 149px 930px 0 0;
-  
-          width: 565px;
-    
-          line-height: 1.2;
         }
       }
   
       .swiper-pagination{
-        margin: 1% 0 0 10%;
+        margin: 0 0 0 -49%;
       }
   
-      .logos{  
-        padding-top: 40px;
-  
-        .content-wrapper{
-          margin-bottom: 50px;
-          width: 80px;
-        }
-  
+      .logos{    
         .first{
-          margin: 14px 0 0 117px;
-          width: 58px;
+          margin: 50% 0 0 -11%;
         }
   
         .second{
-          margin: 13px 0 0 166px;
-          width: 58px;
+          margin: 44% 0 0 26%;
         }
   
         .third{
-          margin: 13px 0 0 210px;
-          width: 59px;
+          margin: 44% 0 0 65%;
         }
       }
   
       .logos-text{
         .text{
-          text-align: center;
           .first-text{
-            margin: -37px 0 0 112px;
-  
-            font-size: 15px;
-            font-weight: bold;
-            color: $white;
+            margin: -2.2% 0 0 -1%;
           }
   
           .second-text{
-            margin: -41px 0 0 230px;
-            width: 90px;
-  
-            font-size: 15px;
-            font-weight: bold;
-            color: $white;
+            margin: -2.5% 0 0 5%;
           }
   
           .third-text{
-            margin: -42px 0 0 355px;
-            width: 90px;
-  
-            font-size: 15px;
-            font-weight: bold;
-            color: $white;
+            margin: -2.3% 0 0 12%;
+            width: 70px;
           }
         }
       }
   
-      p{
-        width: 70px;
+      .sidebar-item {
+        margin: 175px 0 0 89.4%;
+      }
+    }
+
+    .section-mission{
+      padding-bottom: 34px;
+  
+      .content-holder {  
+        .img{
+          margin: -24% 0 81px -6%;
+        }
+
+        .title{  
+          margin: -81% 0 0 9%;
+          width: 235px;
+        }
+  
+        .content-pocket{
+          width: 310px;
+          position: absolute;
+  
+          &:nth-child(2){
+            margin: 32px 0 0 11px;
+          }
+  
+          &:nth-child(3){
+            margin: 76px 0 0 11px;
+          }
+  
+          &:nth-child(4){
+            margin: 121px 0 0 11px;
+          }
+  
+          &:nth-child(5){
+            margin: 165px 0 0 11px;
+          }
+  
+          &:nth-child(6){
+            margin: 0 0 0 12px;
+          }
+  
+          .bullet-point{
+            margin-left: 210px 0 0 11px; 
+          }
+  
+          .btn-blue{
+            margin: 76.5% 0 0 5.8%;
+          }
+  
+          .btn-yellow{
+            margin: 76.5% 0 0 74%;
+          }
+        }
+      }
+  
+      .box{ 
+        margin: 58.5% 0 0 75.5%;
+        .title{
+          padding: 210px 0 0 48px;
+          width: 530px;
+        }
+      
+        .content-pocket2{
+          .logos{
+            .first-logo{
+              margin: 33px 0 0 114px;
+            }
+  
+            .second-logo{
+              margin: 3px 0 0 114px;
+            }
+  
+            .third-logo{
+              margin: 2px 0 0 112px;
+            }
+  
+            .fourth-logo{
+              margin: -1px 0 0 117px;
+            }
+  
+            .small-title{
+              margin:-47px 0 15px 187px;
+            }
+  
+            .small-desc{
+              margin: -12px 0 33px 186px;
+            }
+          }
+        }
+      }
+    }
+
+    .section-healthy{
+      margin-bottom: 250px;
+      .title{
+        margin-left: -1.5%;
+        margin-bottom: 6px;
+
+        letter-spacing: 2px;
+      }
+  
+      .desc{
+        margin-left: -1.5%;
+
+        letter-spacing: 2px;
+      }
+  
+      .swiper-container{
+        margin: 18px 0 0 -8.3%;
+
+    }
+      .btn{
+        margin: 67px 0 0 -1.4%;
+      }
+    }
+
+    .section-is{
+      padding: 172px 0 0 0;  
+      .content-wrapper{
+        .img{  
+          margin: .8% 0 0 2.6%;
+        }
+  
+        .content-holder{
+          .title{
+            margin: -135px 0 0 28.5%;
+          }
+  
+          .title-blue{
+            margin: -13px 0 30px 28.5%;
+            letter-spacing: 2px;
+          }
+  
+          .desc{
+            margin: 27px 0 41px 28.5%;
+            width: 665px;
+          }
+  
+          .content-features{  
+            .content-pocket1{
+              margin: 8px 0 -4px 0;
+              padding: 0 0 0 266px;
+            }
+  
+            .content-pocket2{
+              margin: 22px 0 0 0;
+              padding: 0 0 0 135px;
+            }
+  
+            .content-pocket3{
+              margin: 13px 0 6px 0;
+              padding-left: 135px;
+            }
+          }
+  
+          .btn{
+            margin: 28px 0 0 271px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(lg) {
+  .home {
+    .section-intro {  
+      .swiper-container{
+        .swiper-slide{
+          padding: 0 0 45px 118px;
+        }
+  
+        h1{
+          line-height: 1.2;
+        }
+  
+        .title2{
+          line-height: 1.2;
+        }
+      }
+  
+      .swiper-pagination{
+        margin: 1% 0 0 -38%;
       }
   
       .sidebar-item {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-  
-        position: fixed;
-        margin: 300px 0 0 1773px;
-  
-        width: 58px;
-        height: 260px;
-  
-        background-color: $white;
-  
-        .fb-logo{
-          flex-grow: 1;
-          margin: 13px 0 6px 0;
-  
-          width: 9px;
-        }
-  
-        .ig-logo{
-          margin: 0 5px 21px 0;
-  
-          width: 9px;
-        }
-  
-        .in-logo{
-          margin: 0 5px 22px 0;
-  
-          width: 9px;
-        }
-  
-        .share-logo{
-          margin: 0 5px 25px 0;
-  
-          width: 9px;
-        }
-  
-        .phone-logo{
-          margin: 0 0 9px 4px;
-     
-          width: 9px;
-        }
+        margin: 300px 0 0 87.5%;
       }
     }
   
@@ -832,17 +945,17 @@
   
       .content-wrapper{
         .img{  
-          margin: 160px 0 0 26%;
+          margin: 65% 0 0 26%;
           width: 475px;
         }
   
         .content-holder{
           .title{
-            margin: 50px 0 0 13%;
+            margin: -59% 0 0 13%;
           }
   
           .title-blue{
-            margin: -15px 0 33px 13%;
+            margin: 0 0 52% 13%;
           }
   
           .desc{
@@ -876,10 +989,26 @@
 }
 
 @media (min-width: 992px) and (max-width: 1075px){
-  .section-mission{
+  .section-intro {  
+    .swiper-pagination{
+      margin: 1% 0 0 -36% !important;
+    }
+  }
 
+  .section-mission{
     .box{ 
       margin: 55px 0 0 30% !important;
+    }
+  }
+
+  .section-is{
+    .desc{
+      margin: -29px 0 45px 13%;
+    }
+
+    .btn{
+      padding: 18px 53px;
+      margin: 36px 0 0 12%  !important;
     }
   }
 }
@@ -895,7 +1024,7 @@
       }
 
       .swiper-pagination{
-        margin: 1% 0 0 10%;
+        margin: 1% 0 0 -39%;
       }
   
       .logos{  
@@ -943,6 +1072,10 @@
             font-size: 18px;
           }
         }
+      }
+
+      .sidebar-item {
+        display: none;
       }
     }
 
@@ -1020,22 +1153,21 @@
   
       .content-wrapper{
         .img{  
-          margin: 160px 0 0 17%;
+          margin: 65% 0 0 17%;
           width: 475px;
         }
   
         .content-holder{
           .title{
-            margin: 50px 0 0 9%;
+            margin: -59% 0 0 8.5%;
           }
   
           .title-blue{
-            margin: -15px 0 33px 9%;
+            margin: 0 0 52% 8.5%;
           }
   
           .desc{
             margin: -29px 0 45px 9%;
-            width: 680px;
           }
   
           .content-features{  
@@ -1065,15 +1197,41 @@
 }
 
 @media (min-width: 800px) and (max-width: 900px){
-  .box{ 
-    margin: 170px 0 0 25% !important;
+
+  .section-intro {
+    .sidebar-item {
+      margin: 300px 0 0 81% !important;
+    }
+  }
+
+  .section-mission{
+    .box{ 
+      margin: 170px 0 0 25% !important;
+    }
+  }
+
+  .section-is{
+    .desc{
+      margin: -29px 0 45px 13%;
+      width: 700px !important;
+    }
   }
 }
 
-@media (min-width: 768px) and (max-width: 800px){
-  .box{ 
-    margin: 170px 0 0 16% !important;
+@media (min-width: 768px) and (max-width: 799px){
+
+  .section-intro {
+    .sidebar-item {
+      margin: 300px 0 0 77.5% !important;
+    }
   }
+
+  .section-mission{
+    .box{ 
+      margin: 170px 0 0 16% !important;
+    }
+  }
+
   .section-is{
     padding: 0px 0 175px 0;
       .content-holder{
@@ -1088,7 +1246,6 @@
         }
       }
     }
-  
 }
 
 @include respond-to(sm) {
@@ -1098,6 +1255,7 @@
       .swiper-container{
         h1{
           margin: 149px 930px 0 -30px;
+          width: 530px;
         }
         .swiper-slide{
           padding: 0 0 0 80px;
@@ -1105,13 +1263,13 @@
       }
 
       .swiper-pagination{
-        margin: 1% 0 0 10%;
+        margin: 1% 0 0 -40%;
       }
   
       .logos{  
         .content-wrapper{
           margin-bottom: 50px;
-          width: 80px;
+
         }
   
         .first{
@@ -1132,7 +1290,6 @@
   
       .logos-text{
         .text{
-          text-align: center;
           .first-text{
             margin: -37px 0 0 52px;
   
@@ -1154,11 +1311,13 @@
           }
         }
       }
+
+      .sidebar-item {
+        display: none;
+      }
     }
     
     .section-mission{
-      padding-bottom: 34px;
-
       .content-holder {
         &:nth-child(1n){
           width: 40%
@@ -1240,38 +1399,36 @@
   
       .content-wrapper{
         .img{  
-          margin: 160px 0 0 11%;
+          margin: 65% 0 0 11%;
           width: 475px;
         }
   
         .content-holder{
           .title{
-            margin: 50px 0 0 6%;
-            font-size: 35px;
+            margin: -59% 0 0 5.3%;
           }
   
           .title-blue{
-            margin: -15px 0 33px 6%;
-            font-size: 35px;
+            margin: 0 0 52% 5.3%;
           }
   
           .desc{
-            margin: -29px 0 45px 6%;
-            width: 580px;
+            margin: -29px 0 45px 5.3%;
+            width: 600px;
           }
   
           .content-features{  
             .content-pocket1{
-              margin: 4px 0 12px -16%;
+              margin: 4px 17% 12px 0;
             }
   
             .content-pocket2{
-              padding: 7px 0 11px 6%; 
+              padding: 7px 0 11px 5.3%; 
               left: 0;
             }
   
             .content-pocket3{
-              padding: 8px 0 16px 6%;
+              padding: 8px 0 16px 5.3%;
               left: 0;
             }
           }
@@ -1287,7 +1444,6 @@
 }
 
 @media (min-width: 661px) and (max-width: 700px){
-
   .box{ 
     margin: 130px 0 0 0% !important;
 
@@ -1296,8 +1452,6 @@
 }
 
 @media (min-width: 576px) and (max-width: 660px){
-
-
   .box{ 
     margin: 120px 0 0 -24% !important;
 
@@ -1305,16 +1459,1812 @@
   }
 
   .section-is{
+    padding: 0px 0 175px 0;
+
     .content-wrapper{
       .content-holder{
+        .title{
+          margin: -48% 0 0 3%;
+          font-size: 32px !important;
+        }
+
+        .title-blue{
+          margin: 0 0 44% 3%;
+          font-size: 32px !important;
+        }
+
         .desc{
-          margin: -29px 0 45px 6%;
-          width: 520px !important;
+          margin: -29px 0 45px 3.3%;
+          width: 500px !important;
+        }
+
+        .content-features{  
+          .content-pocket1{
+            margin: 4px 22% 12px 0;
+          }
+
+          .content-pocket2{
+            padding: 7px 0 11px 3.3%; 
+            left: 0;
+          }
+
+          .content-pocket3{
+            padding: 8px 0 16px 3.3%;
+            left: 0;
+          }
         }
 
         .btn{
           padding: 18px 53px;
-          margin: 36px 0 0 10% !important;
+          margin: 36px 0 0 5%;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .home {
+    .section-intro {
+      padding-bottom: 80px;
+      .swiper-container{
+        h1{
+          margin: 150px 0 0 0;
+          font-size: 48px;
+        }
+        .swiper-slide{
+          padding: 0 0 0 25px;
+        }
+      }
+
+      .swiper-pagination{
+        margin: 0 0 0 -40%;
+      }
+  
+      .logos{  
+        padding-top: 10px;
+
+        .content-wrapper{
+          position: absolute;
+
+          .first{
+            margin: 13px 0 0 92px;
+            width: 65px;
+          }
+    
+          .second{
+            margin: 10px 0 0 248px;
+            width: 65px;
+          }
+    
+          .third{
+            margin: 13px 0 0 395px;
+            width: 65px;
+          }
+        }
+  
+      .logos-text{
+        .text{
+          .first-text{
+            margin: 20px 0 0 90px;
+  
+            font-size: 18px;
+          }
+  
+          .second-text{
+            margin: -51px 0 0 222px;
+            width: 105px;
+  
+            font-size: 18px;
+          }
+  
+          .third-text{
+            margin: -49px 0 0 380px;
+            width: 90px;
+  
+            font-size: 18px;
+          }
+        }
+      }
+      }
+
+      .logos-text{
+        .text{
+          .first-text{
+            margin: 12px 0 0 15%;
+  
+            font-size: 16px;
+          }
+  
+          .second-text{
+            margin: -45px 0 0 220px;
+            width: 105px;
+  
+            font-size: 18px;
+          }
+  
+          .third-text{
+            margin: -49px 0 0 378px;
+            width: 90px;
+  
+            font-size: 18px;
+          }
+        }
+      }
+
+      .sidebar-item{
+        display: none;
+      }
+    }
+    
+    .section-mission{
+      padding-bottom: 0;
+
+      .content-holder {
+        &:nth-child(2n){
+          margin-top: 15%;
+          width: 100%
+        }
+
+        .img{
+          display: none;
+        }
+
+        .title{  
+          margin: -35px 0 0 40px;
+
+          font-size: 30px;
+        }
+
+        .title2{
+          margin: -35px 0 38px 40px;
+
+          font-size: 26px !important;
+        }
+  
+        .content-pocket{
+          width: 290px;
+
+          .bullet-point{
+            margin-left: 6%; 
+            width: 20px;
+          }
+  
+          .missions{
+            font-size: 14px;
+          }
+
+          .btn-blue{
+            margin: 3.2% 0 0 5%;
+            padding: 14px 14px 14px 0;
+            width: 180px;
+
+            font-size: 13px;
+
+            background-size: 90%;
+          }
+
+          .btn-yellow{
+            margin: 75px 0 0 5%;
+            padding: 14px 12px;
+
+            width: 163px;
+          }
+        }
+      }
+  
+      .box{ 
+        margin: 120px 0 0 -8%;
+
+        background-size: 84% 75%;
+        .content-pocket{
+          .logos{
+            .first-logo{
+              margin: 20px 0 0 102px;
+              width: 40px;
+            }
+  
+            .second-logo{
+              margin: 3px 0 0 104px;
+              width: 40px;
+            }
+  
+            .third-logo{
+              margin: 2px 0 0 103px;
+              width: 42px;
+            }
+  
+            .fourth-logo{
+              margin: -1px 0 0 106px;
+              width: 38px;
+            }
+  
+            .small-title{ 
+              margin:-47px 0 15px 178px;
+              width: 176px;
+  
+              font-size: 16px;
+            }
+  
+            .small-desc{  
+              margin: -12px 0 33px 176px;
+              width: 390px;
+  
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+
+    .section-healthy{
+      margin-bottom: 25px;
+
+      .title{
+        margin-left: 26px;
+
+        font-size: 30px;
+      }
+
+      .desc{
+        margin-left: 26px;
+
+        font-size: 14px;
+      }
+
+      .swiper-container{
+        padding: 20px 0 80px 29px;
+        .swiper-slide{
+
+          &:nth-child(1n){
+            width: 400px !important;  
+    
+            .caption{
+              margin: 80px 0 0 -115px !important;
+
+              font-size: 20px;
+              line-height: 24px !important;
+            }
+  
+            .desc{              
+              margin: 252px 295px 0 0 !important;
+              width: 50px;
+              height: 25px;
+  
+              font-size: 12px;    
+            } 
+
+            img{
+              width: 400px;
+              margin: 0 0 0 -1%;
+            }      
+          }
+
+          &:nth-child(2n){
+            width: 200px!important;
+  
+            .caption{         
+              margin: 80px 0 0 125px !important;
+              width: 165px;
+
+              font-size: 20px;
+            }
+  
+            .desc{             
+              margin: 250px 55px 0 0px !important;
+              width: 102px;
+              height: 26px;
+  
+              font-size: 13px;
+            }
+
+            img{
+              width: 200px;
+            }
+          }
+
+          &:nth-child(3n){
+            width: 200px!important;
+  
+            .caption{         
+              margin: 80px 0 0 125px !important;
+              width: 165px;
+
+              font-size: 20px;
+            }
+  
+            .desc{             
+              margin: 250px 55px 0 0px !important;
+              width: 102px;
+              height: 26px;
+  
+              font-size: 13px;
+            }
+
+            img{
+              width: 200px;
+            }
+          }
+        }
+      }
+
+      .btn{
+        margin: -30px 0 0 28px;
+        padding: 14px 14px 14px 0;
+        width: 180px;
+
+        font-size: 13px;
+
+        background-size: 90%;
+
+      }
+    }
+
+    .section-is{
+      padding: 0px 0 100px 0;
+  
+      .content-wrapper{
+        .img{  
+          margin: 55% 0 0 6%;
+          width: 400px;
+        }
+  
+        .content-holder{
+          .title{
+            margin: -48% 0 0 3%;
+            font-size: 32px !important;
+          }
+  
+          .title-blue{
+            margin: 0 0 44% 3%;
+            font-size: 32px !important;
+          }
+  
+          .desc{
+            margin: -29px 0 45px 3.3%;
+            width: 500px;
+          }
+  
+          .content-features{  
+            .content-pocket1{
+              margin: 4px 22% 12px 0;
+            }
+  
+            .content-pocket2{
+              padding: 7px 0 11px 3.3%; 
+              left: 0;
+            }
+  
+            .content-pocket3{
+              padding: 8px 0 16px 3.3%;
+              left: 0;
+            }
+          }
+  
+          .btn{
+            padding: 18px 53px;
+            margin: 36px 0 0 5%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 500px) and (max-width: 530px){
+
+  .section-mission{
+    .content-holder {
+      .box{ 
+        margin: 110px 0 0 -13% !important;
+
+        background-size: 71% 72% !important;
+      }
+      .title{
+        margin: -35px 0 0 14% !important;
+      }
+
+      .content-pocket{
+        .logos{
+          .first-logo{
+            margin: 20px 0 0 52% !important;
+            width: 40px;
+          }
+
+          .second-logo{
+            margin: 3px 0 0 52% !important;
+            width: 40px;
+          }
+
+          .third-logo{
+            margin: 2px 0 0 52% !important;
+            width: 42px;
+          }
+
+          .fourth-logo{
+            margin: -1px 0 0 52% !important;
+            width: 38px;
+          }
+
+          .small-title{ 
+            margin:-47px 0 15px 70% !important;
+            width: 158px;
+
+            font-size: 16px;
+          }
+
+          .small-desc{  
+            margin: -12px 0 33px 70% !important;
+            width: 275px !important;
+
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .section-is{
+    padding: 0px 0 100px 0;
+
+    .content-wrapper{
+      .img{  
+        margin: 60% 0 0 7% !important;
+        width: 350px !important;
+      }
+
+      .content-holder{
+        .title{
+          margin: -43% 0 0 3% !important;
+        }
+
+        .title-blue{
+          margin: 0 0 38% 3% !important;
+        }
+
+        .desc{
+          margin: -29px 0 45px 3% !important;
+          width: 420px !important;
+        }
+
+        .content-features{  
+          .content-pocket1{
+            margin: 4px 22% 12px 0;
+          }
+
+          .content-pocket2{
+            padding: 7px 0 11px 3% !important; 
+            left: 0;
+          }
+
+          .content-pocket3{
+            padding: 8px 0 16px 3% !important;
+            left: 0;
+          }
+        }
+
+        .btn{
+          padding: 18px 53px;
+          margin: 36px 0 0 5%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 470px) and (max-width: 499px){
+  .home {
+    .section-intro {
+      padding-bottom: 80px;
+      .swiper-container{
+        h1{
+          width: 375px;
+          margin: 110px 930px 0 0;
+
+          font-size: 40px;
+        }
+        .swiper-slide{
+          padding: 0 0 0 18px;
+        }
+      }
+
+      .logos{  
+        padding-top: 10px;
+        .content-wrapper{
+          margin-bottom: 50px;
+          width: 80px;
+        }
+  
+        .first{
+          margin: 13px 0 0 66px;
+          width: 65px;
+        }
+  
+        .second{
+          margin: 10px 0 0 220px;
+          width: 65px;
+        }
+  
+        .third{
+          margin: 13px 0 0 372px;
+          width: 65px;
+        }
+      }
+  
+      .logos-text{
+        .text{
+          .first-text{
+            margin: 20px 0 0 13%;
+  
+            font-size: 18px;
+          }
+  
+          .second-text{
+            margin: -51px 0 0 39%;
+            width: 105px;
+  
+            font-size: 18px;
+          }
+  
+          .third-text{
+            margin: -49px 0 0 72%;
+            width: 90px;
+  
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    .section-mission{
+      .content-holder {
+        &:nth-child(2n){
+          margin-top: 8%;
+          width: 100%
+        }
+  
+        .content-pocket{
+          width: 290px;
+
+          .bullet-point{
+            margin-left: 15%; 
+            width: 20px;
+          }
+  
+          .missions{
+            font-size: 14px;
+          }
+
+          .btn-blue{
+            margin: 3.2% 0 0 5%;
+            padding: 14px 14px 14px 0;
+            width: 180px;
+
+            font-size: 13px;
+
+            background-size: 90%;
+          }
+
+          .btn-yellow{
+            margin: 75px 0 0 5%;
+            padding: 14px 12px;
+
+            width: 163px;
+          }
+        }
+      }
+  
+      .box{ 
+        margin: 120px 0 0 -14% !important;
+
+        background-size: 71% 72% !important;
+
+        .title{
+          margin: -35px 0 0 70px;
+        }
+
+        .content-pocket{
+          .logos{
+            .first-logo{
+              margin: 20px 0 0 125px;
+              width: 40px;
+            }
+  
+            .second-logo{
+              margin: 3px 0 0 125px;
+              width: 40px;
+            }
+  
+            .third-logo{
+              margin: 2px 0 0 125px;
+              width: 42px;
+            }
+  
+            .fourth-logo{
+              margin: -1px 0 0 127px;
+              width: 38px;
+            }
+  
+            .small-title{ 
+              margin:-47px 0 15px 200px;
+              width: 176px;
+  
+              font-size: 16px;
+            }
+  
+            .small-desc{  
+              margin: -12px 0 33px 200px;
+              width: 390px;
+  
+              font-size: 16px;
+            }
+          }
+        }
+      }
+
+      .content-pocket{
+        .logos{
+          .first-logo{
+            margin: 20px 0 0 52% !important;
+            width: 40px;
+          }
+
+          .second-logo{
+            margin: 3px 0 0 52% !important;
+            width: 40px;
+          }
+
+          .third-logo{
+            margin: 2px 0 0 52% !important;
+            width: 42px;
+          }
+
+          .fourth-logo{
+            margin: -1px 0 0 52% !important;
+            width: 38px;
+          }
+
+          .small-title{ 
+            margin:-47px 0 15px 70% !important;
+            width: 158px;
+
+            font-size: 16px;
+          }
+
+          .small-desc{  
+            margin: -12px 0 33px 70% !important;
+            width: 275px !important;
+
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .section-is{
+      padding: 0px 0 100px 0;
+  
+      .content-wrapper{
+        .img{  
+          margin: 60% 0 0 7% !important;
+          width: 350px !important;
+        }
+  
+        .content-holder{
+          .title{
+            margin: -43% 0 0 3% !important;
+            font-size: 30px!important;
+          }
+  
+          .title-blue{
+            margin: 0 0 38% 3% !important;
+            font-size: 30px!important;
+          }
+  
+          .desc{
+            margin: -29px 0 45px 3% !important;
+            width: 420px !important;
+          }
+  
+          .content-features{  
+            .content-pocket1{
+              margin: 4px 22% 12px 0;
+            }
+  
+            .content-pocket2{
+              padding: 7px 0 11px 3% !important; 
+              left: 0;
+            }
+  
+            .content-pocket3{
+              padding: 8px 0 16px 3% !important;
+              left: 0;
+            }
+          }
+  
+          .btn{
+            padding: 18px 53px;
+            margin: 36px 0 0 5%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 420px) and (max-width: 469px){
+  .home {
+    .section-intro {
+      padding-bottom: 80px;
+      .swiper-container{
+        h1{
+          width: 375px;
+          margin: 90px 930px 0 0;
+
+          font-size: 40px;
+        }
+        .swiper-slide{
+          padding: 0 0 0 18px;
+        }
+      }
+
+      .logos{  
+        padding-top: 10px;
+        .content-wrapper{
+          margin-bottom: 50px;
+          width: 80px;
+        }
+  
+        .first{
+          margin: 13px 0 0 55px;
+          width: 65px;
+        }
+  
+        .second{
+          margin: 10px 0 0 190px;
+          width: 65px;
+        }
+  
+        .third{
+          margin: 13px 0 0 340px;
+          width: 65px;
+        }
+      }
+  
+      .logos-text{
+        .text{
+          .first-text{
+            margin: 20px 0 0 13%;
+  
+            font-size: 18px;
+          }
+  
+          .second-text{
+            margin: -51px 0 0 39%;
+            width: 105px;
+  
+            font-size: 18px;
+          }
+  
+          .third-text{
+            margin: -49px 0 0 72%;
+            width: 90px;
+  
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    .section-mission{
+      padding-bottom: 34px;
+
+      .content-holder {
+        &:nth-child(2n){
+          margin-top: 15%;
+          width: 100%
+        }
+
+        .title{  
+          margin: -35px 0 0 40px;
+          font-size: 30px;
+        }
+  
+        .content-pocket{
+          width: 290px;
+
+          .bullet-point{
+            margin-left: 15%; 
+            width: 20px;
+          }
+  
+          .missions{
+            font-size: 14px;
+          }
+
+          .btn-blue{
+            margin: 3.2% 0 0 5%;
+            padding: 14px 14px 14px 0;
+            width: 180px;
+
+            font-size: 13px;
+
+            background-size: 90%;
+          }
+
+          .btn-yellow{
+            margin: 75px 0 0 5%;
+            padding: 14px 12px;
+
+            width: 163px;
+          }
+        }
+      }
+  
+      .box{ 
+        margin: 100px 0 0 -16% !important;
+
+        background-size: 67% 72%;
+
+        .title{
+          margin :-35px 0 0 100px;
+        }
+
+        .content-pocket{
+          .logos{
+            .first-logo{
+              margin: 20px 0 0 54%;
+              width: 40px;
+            }
+  
+            .second-logo{
+              margin: 3px 0 0 54%;
+              width: 40px;
+            }
+  
+            .third-logo{
+              margin: 2px 0 0 54%;
+              width: 42px;
+            }
+  
+            .fourth-logo{
+              margin: -1px 0 0 54%;
+              width: 38px;
+            }
+  
+            .small-title{ 
+              margin:-47px 0 15px 75%;
+              width: 150px;
+  
+              font-size: 15px;
+            }
+  
+            .small-desc{  
+              margin: -12px 0 33px 75%;
+              width: 310px;
+  
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+
+    .section-healthy{
+      margin-bottom: 25px;
+
+      .title{
+        margin-left: 20px !important;
+
+        font-size: 30px;
+      }
+
+      .desc{
+        margin-left: 21px !important;
+
+        font-size: 14px;
+      }
+
+      .swiper-container{
+        padding: 10px 0 80px 24px !important;
+        .swiper-slide{
+
+          &:nth-child(1n){
+            width: 400px;  
+    
+            .caption{
+              margin: 80px 0 0 -115px;
+
+              font-size: 20px;
+              line-height: 24px;
+            }
+  
+            .desc{              
+              margin: 252px 295px 0 0;
+              width: 50px;
+              height: 25px;
+  
+              font-size: 12px;    
+            } 
+
+            img{
+              width: 400px;
+              margin: 0 0 0 -1%;
+            }      
+          }
+
+          &:nth-child(2n){
+            width: 200px;
+  
+            .caption{         
+              margin: 80px 0 0 125px;
+              width: 165px;
+
+              font-size: 20px;
+            }
+  
+            .desc{             
+              margin: 250px 55px 0 0px;
+              width: 102px;
+              height: 26px;
+  
+              font-size: 13px;
+            }
+
+            img{
+              width: 200px;
+            }
+          }
+
+          &:nth-child(3n){
+            width: 200px;
+  
+            .caption{         
+              margin: 80px 0 0 125px;
+              width: 165px;
+
+              font-size: 20px;
+            }
+  
+            .desc{             
+              margin: 250px 55px 0 0px;
+              width: 102px;
+              height: 26px;
+  
+              font-size: 13px;
+            }
+
+            img{
+              width: 200px;
+            }
+          }
+        }
+      }
+
+      .btn{
+        margin: -30px 0 0 22px !important;
+        padding: 14px 14px 14px 0;
+        width: 180px;
+
+        font-size: 13px;
+
+        background-size: 90%;
+
+      }
+    }
+
+    .section-is{
+      padding: 0px 0 100px 0;
+  
+      .content-wrapper{
+        .img{  
+          margin: 68% 0 0 7% !important;
+          width: 350px !important;
+        }
+  
+        .content-holder{
+          .title{
+            margin: -108% 0 0 6% !important;
+            font-size: 28px!important;
+          }
+  
+          .title-blue{
+            margin: 0 0 87% 6% !important;
+            font-size: 28px!important;
+          }
+  
+          .desc{
+            margin: -29px 0 45px 6% !important;
+            width: 385px !important;
+            font-size: 16px;
+          }
+  
+          .content-features{  
+            .content-pocket1{
+              margin: 4px 67% 12px 0;
+              width: 345px;
+            }
+  
+            .content-pocket2{
+              left: 0;
+              margin: 7px 5% 11px 0 !important; 
+              width: 345px;
+            }
+  
+            .content-pocket3{
+              left: 0;
+              margin: 8px 5% 16px 0 !important;
+              width: 345px;
+            }
+          }
+  
+          .btn{
+            padding: 18px 53px;
+            margin: 10px 0 0 5%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 380px) and (max-width: 419px){
+  .home {
+    .section-intro {
+      padding-bottom: 80px;
+      .swiper-container{
+        h1{
+          width: 300px;
+          margin: 60px 930px 0 0;
+
+          font-size: 37px;
+        }
+        .swiper-slide{
+          padding: 0 0 0 18px;
+        }
+      }
+
+      .logos{  
+        padding-top: 10px;
+        .content-wrapper{
+          margin-bottom: 50px;
+          width: 80px;
+        }
+  
+        .first{
+          margin: 13px 0 0 45px;
+          width: 65px;
+        }
+  
+        .second{
+          margin: 10px 0 0 165px;
+          width: 65px;
+        }
+  
+        .third{
+          margin: 13px 0 0 305px;
+          width: 65px;
+        }
+      }
+  
+      .logos-text{
+        .text{
+          .first-text{
+            margin: 20px 0 0 13%;
+  
+            font-size: 18px;
+          }
+  
+          .second-text{
+            margin: -51px 0 0 39%;
+            width: 105px;
+  
+            font-size: 18px;
+          }
+  
+          .third-text{
+            margin: -49px 0 0 72%;
+            width: 90px;
+  
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    .section-mission{
+      padding-bottom: 34px;
+
+      .content-holder {
+        &:nth-child(2n){
+          margin-top: 15%;
+          width: 100%
+        }
+
+        .img{
+          display: none;
+        }
+
+        .title{  
+          margin: -35px 0 0 50px;
+          font-size: 30px;
+        }
+  
+        .content-pocket{
+          width: 290px;
+
+          .bullet-point{
+            margin-left: 15%; 
+            width: 20px;
+          }
+  
+          .missions{
+            font-size: 14px;
+          }
+
+          .btn-blue{
+            margin: 3.2% 0 0 5%;
+            padding: 14px 14px 14px 0;
+            width: 180px;
+
+            font-size: 13px;
+
+            background-size: 90%;
+          }
+
+          .btn-yellow{
+            margin: 75px 0 0 5%;
+            padding: 14px 12px;
+
+            width: 163px;
+          }
+        }
+      }
+  
+      .box{ 
+        margin: 100px 0 0 -14% !important;
+
+        background-size: 72% 72%;
+
+        .content-pocket{
+          .logos{
+            .first-logo{
+              margin: 20px 0 0 115px;
+              width: 40px;
+            }
+  
+            .second-logo{
+              margin: 3px 0 0 115px;
+              width: 40px;
+            }
+  
+            .third-logo{
+              margin: 2px 0 0 115px;
+              width: 42px;
+            }
+  
+            .fourth-logo{
+              margin: -1px 0 0 117px;
+              width: 38px;
+            }
+  
+            .small-title{ 
+              margin:-47px 0 15px 185px;
+              width: 176px;
+  
+              font-size: 15px;
+            }
+  
+            .small-desc{  
+              margin: -12px 0 33px 185px;
+              width: 265px;
+  
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+
+    .section-healthy{
+      margin-bottom: 25px;
+
+      .title{
+        margin-left: 16px !important;
+
+        font-size: 30px;
+      }
+
+      .desc{
+        margin-left: 17px !important;
+
+        font-size: 14px;
+      }
+
+      .swiper-container{
+        padding: 18px 0 80px 20px !important;
+        .swiper-slide{
+
+          &:nth-child(1n){
+            width: 400px;  
+    
+            .caption{
+              margin: 80px 0 0 -115px;
+
+              font-size: 20px;
+              line-height: 24px;
+            }
+  
+            .desc{              
+              margin: 252px 295px 0 0;
+              width: 50px;
+              height: 25px;
+  
+              font-size: 12px;    
+            } 
+
+            img{
+              width: 400px;
+              margin: 0 0 0 -1%;
+            }      
+          }
+
+          &:nth-child(2n){
+            width: 200px;
+  
+            .caption{         
+              margin: 80px 0 0 125px;
+              width: 165px;
+
+              font-size: 20px;
+            }
+  
+            .desc{             
+              margin: 250px 55px 0 0px;
+              width: 102px;
+              height: 26px;
+  
+              font-size: 13px;
+            }
+
+            img{
+              width: 200px;
+            }
+          }
+
+          &:nth-child(3n){
+            width: 200px;
+  
+            .caption{         
+              margin: 80px 0 0 125px;
+              width: 165px;
+
+              font-size: 20px;
+            }
+  
+            .desc{             
+              margin: 250px 55px 0 0px;
+              width: 102px;
+              height: 26px;
+  
+              font-size: 13px;
+            }
+
+            img{
+              width: 200px;
+            }
+          }
+        }
+      }
+
+      .btn{
+        margin: -30px 0 0 18px !important;
+        padding: 14px 14px 14px 0;
+        width: 180px;
+
+        font-size: 13px;
+
+        background-size: 90%;
+
+      }
+    }
+
+    .section-is{
+      padding: 0px 0 100px 0;
+  
+      .content-wrapper{
+        .img{  
+          margin: 68% 0 0 5% !important;
+          width: 330px !important;
+        }
+  
+        .content-holder{
+          .title{
+            margin: -108% 0 0 4% !important;
+            font-size: 28px!important;
+          }
+  
+          .title-blue{
+            margin: 0 0 87% 4% !important;
+            font-size: 28px!important;
+          }
+  
+          .desc{
+            margin: -29px 0 45px 4% !important;
+            width: 330px !important;
+            font-size: 16px;
+          }
+  
+          .content-features{  
+            .content-pocket1{
+              margin: 4px 69% 12px 0;
+              width: 345px;
+            }
+  
+            .content-pocket2{
+              left: 0;
+              margin: 7px 7% 11px 0 !important; 
+              width: 345px;
+            }
+  
+            .content-pocket3{
+              left: 0;
+              margin: 8px 7% 16px 0 !important;
+              width: 345px;
+            }
+          }
+  
+          .btn{
+            padding: 18px 53px;
+            margin: 10px 0 0 4%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 379px){
+  .home {
+    .section-intro {
+      padding-bottom: 80px;
+      .swiper-container{
+        h1{
+          width: 300px;
+          margin: 30px 930px 0 0;
+
+          font-size: 37px;
+        }
+        .swiper-slide{
+          padding: 0 0 0 18px;
+        }
+      }
+
+      .logos{  
+        padding-top: 10px;
+        .content-wrapper{
+          margin-bottom: 50px;
+          width: 80px;
+        }
+  
+        .first{
+          margin: 13px 0 0 20px;
+          width: 65px;
+        }
+  
+        .second{
+          margin: 10px 0 0 125px;
+          width: 65px;
+        }
+  
+        .third{
+          margin: 13px 0 0 240px;
+          width: 65px;
+        }
+      }
+  
+      .logos-text{
+        .text{
+          .first-text{
+            margin: 20px 0 0 5%;
+  
+            font-size: 16px;
+          }
+  
+          .second-text{
+            margin: -42px 0 0 30%;
+            width: 105px;
+  
+            font-size: 16px;
+          }
+  
+          .third-text{
+            margin: -46px 0 0 66%;
+            width: 90px;
+  
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .section-mission{
+      padding-bottom: 34px;
+
+      .content-holder {
+        &:nth-child(2n){
+          margin-top: 15%;
+          width: 100%
+        }
+
+        .img{
+          display: none;
+        }
+
+        .title{  
+          margin: -35px 0 0 40px;
+          font-size: 30px;
+          
+          width: 245px;
+        }
+  
+        .content-pocket{
+          width: 290px;
+
+          .bullet-point{
+            margin-left: 15%; 
+            width: 20px;
+          }
+  
+          .missions{
+            font-size: 14px;
+          }
+
+          .btn-blue{
+            margin: 3.2% 0 0 5%;
+            padding: 14px 14px 14px 0;
+            width: 180px;
+
+            font-size: 13px;
+
+            background-size: 90%;
+          }
+
+          .btn-yellow{
+            margin: 75px 0 0 5%;
+            padding: 14px 12px;
+
+            width: 163px;
+          }
+        }
+      }
+  
+      .box{ 
+        margin: 100px 0 0 -23% !important;
+
+        background-size: 55% 72% !important;
+
+        .title{
+          margin: -35px 0 0 17%;
+          font-size: 28px;
+          width: 412px;
+        }
+
+        .content-pocket{
+          .logos{
+            .first-logo{
+              margin: 20px 0 0 58%;
+              width: 38px;
+            }
+  
+            .second-logo{
+              margin: 3px 0 0 58%;
+              width: 38px;
+            }
+  
+            .third-logo{
+              margin: 2px 0 0 58%;
+              width: 40px;
+            }
+  
+            .fourth-logo{
+              margin: -1px 0 0 58%;
+              width: 36px;
+            }
+  
+            .small-title{ 
+              margin:-47px 0 15px 75%;
+              width: 176px;
+  
+              font-size: 15px;
+            }
+  
+            .small-desc{  
+              margin: -12px 0 33px 75%;
+              width: 250px;
+  
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+
+    .section-healthy{
+      margin-bottom: 25px;
+
+      .title{
+        margin-left: 18px !important;
+
+        font-size: 30px;
+      }
+
+      .desc{
+        margin-left: 20px !important;
+
+        font-size: 14px;
+      }
+
+      .swiper-container{
+        padding: 5px 0 80px 22px !important;
+        .swiper-slide{
+
+          &:nth-child(1n){
+            width: 400px;  
+    
+            .caption{
+              margin: 80px 0 0 -115px;
+
+              font-size: 20px;
+              line-height: 24px;
+            }
+  
+            .desc{              
+              margin: 252px 295px 0 0;
+              width: 50px;
+              height: 25px;
+  
+              font-size: 12px;    
+            } 
+
+            img{
+              width: 400px;
+              margin: 0 0 0 -1%;
+            }      
+          }
+
+          &:nth-child(2n){
+            width: 200px;
+  
+            .caption{         
+              margin: 80px 0 0 125px;
+              width: 165px;
+
+              font-size: 20px;
+            }
+  
+            .desc{             
+              margin: 250px 55px 0 0px;
+              width: 102px;
+              height: 26px;
+  
+              font-size: 13px;
+            }
+
+            img{
+              width: 200px;
+            }
+          }
+
+          &:nth-child(3n){
+            width: 200px;
+  
+            .caption{         
+              margin: 80px 0 0 125px;
+              width: 165px;
+
+              font-size: 20px;
+            }
+  
+            .desc{             
+              margin: 250px 55px 0 0px;
+              width: 102px;
+              height: 26px;
+  
+              font-size: 13px;
+            }
+
+            img{
+              width: 200px;
+            }
+          }
+        }
+      }
+
+      .btn{
+        margin: -45px 0 0 18px !important;
+        padding: 14px 14px 14px 0;
+        width: 180px;
+
+        font-size: 13px;
+
+        background-size: 90%;
+
+      }
+    }
+
+    .section-is{
+      padding: 0px 0 100px 0;
+  
+      .content-wrapper{
+        .img{  
+          margin: 86% 0 0 7% !important;
+          width: 290px !important;
+        }
+  
+        .content-holder{
+          .title{
+            margin: -110% 0 0 5% !important;
+            font-size: 28px!important;
+            width: 260px
+          }
+  
+          .title-blue{
+            margin: 0 0 82% 5% !important;
+            font-size: 28px!important;
+          }
+  
+          .desc{
+            margin: -29px 0 45px 5% !important;
+            width: 290px !important;
+            font-size: 16px;
+          }
+  
+          .content-features{  
+            .content-pocket1{
+              margin: 4px 65% 12px 0;
+              width: 345px;
+            }
+  
+            .content-pocket2{
+              left: 0;
+              margin: 7px 9% 11px 0 !important; 
+              width: 300px;
+            }
+  
+            .content-pocket3{
+              left: 0;
+              margin: 8px 9% 16px 0 !important;
+              width: 300px;
+            }
+          }
+  
+          .btn{
+            padding: 18px 53px;
+            margin: 10px 0 0 5%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 340px) and (max-width: 350px){
+  .home {
+    .section-mission{  
+      .box{ 
+        margin: 100px 0 0 -24% !important;
+
+        background-size: 51% 72% !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 330px) and (max-width: 339px){
+  .home {
+    .section-mission{  
+      .box{ 
+        margin: 100px 0 0 -26% !important;
+
+        background-size: 49% 58% !important;
+
+        .title{
+          font-size: 20px;
+          margin: -35px 0 0 22%;
+        }
+
+        .content-pocket{
+          .logos{
+            .first-logo{
+              margin: 20px 0 0 65%;
+              width: 32px;
+            }
+  
+            .second-logo{
+              margin: 3px 0 0 65%;
+              width: 32px;
+            }
+  
+            .third-logo{
+              margin: 2px 0 0 65%;
+              width: 34px;
+            }
+  
+            .fourth-logo{
+              margin: -1px 0 0 65%;
+              width: 33px;
+            }
+  
+            .small-title{ 
+              margin:-47px 0 15px 80%;
+              width: 150px;
+  
+              font-size: 13px;
+            }
+  
+            .small-desc{  
+              margin: -12px 0 33px 80%;
+              width: 225px;
+  
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 329px){
+  .home {
+    .section-mission{  
+      .box{ 
+        margin: 100px 0 0 -26% !important;
+
+        background-size: 47% 58% !important;
+
+        .title{
+          font-size: 20px;
+          margin: -35px 0 0 22%;
+        }
+
+        .content-pocket{
+          .logos{
+            .first-logo{
+              margin: 20px 0 0 65%;
+              width: 32px;
+            }
+  
+            .second-logo{
+              margin: 3px 0 0 65%;
+              width: 32px;
+            }
+  
+            .third-logo{
+              margin: 2px 0 0 65%;
+              width: 34px;
+            }
+  
+            .fourth-logo{
+              margin: -1px 0 0 65%;
+              width: 33px;
+            }
+  
+            .small-title{ 
+              margin:-47px 0 15px 80%;
+              width: 150px;
+  
+              font-size: 13px;
+            }
+  
+            .small-desc{  
+              margin: -12px 0 33px 80%;
+              width: 225px;
+  
+              font-size: 13px;
+            }
+          }
         }
       }
     }

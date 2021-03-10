@@ -5,6 +5,10 @@
 // -----------------------------------------------------------------------------
 footer{
   margin-top: 100px;
+  background-image:url("../assets/images/26.fw.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   .img-leaves{
     width: 388px;
@@ -16,13 +20,7 @@ footer{
 
   .container{
     .container-bg{
-      background-image:url("../assets/images/26.fw.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-
-      padding-bottom: 4%;
-      height: 100%;
+      padding-bottom: 2.2%;
 
       z-index: 5;
 
@@ -32,7 +30,6 @@ footer{
         align-items: center;
 
         .content-wrapper{
-
           &:nth-child(1){
             width: 57%;
           }
@@ -177,37 +174,13 @@ footer{
           }
         }
       }
-
-      .content-envelope{
-        .desc{
-          &:nth-child(1){
-            width: 555px;
-            margin-top: -32px;
-            u{
-              margin: 0 0 0 116px;
-            }
-          }
-
-          &:nth-child(2){
-            width: 538px;
-            margin: -97px 0 0 535px;
-            u{
-              margin: 0 0 0 119px;
-            }
-          }
-
-          &:nth-child(3){
-            width: 538px;
-            margin: -86px 0 0 1218px;
-
-          }
-        }
-      }
     }
   }
 
   .content-tupperware{
-    padding: 42px;
+    background-color:#fff !important;
+    margin: 0 -10%;
+    padding: 42px 216px;
 
     display: flex;
     justify-content: space-between;
@@ -237,7 +210,7 @@ footer{
       margin: -5px 73px 0 0;
       width: 52px;
     }
-  }
+  
 
   .content-holder{
     ul{ 
@@ -254,6 +227,126 @@ footer{
           font-size: 15px;
           color:$dark-grey;
         }
+      }
+    }
+  }
+  }
+}
+
+@media (min-width: 1921px) and (max-width: 2000px){
+  footer{
+    margin-top: 300px;  
+    .img-leaves{
+      width: 388px;
+      margin: -22.5% 0 44px 83%;
+    }
+  
+    .container{
+      .container-bg{
+        padding-bottom: 2.2%; 
+        .content-box{
+          .content-wrapper{
+            .text{
+              .title{
+                margin: 22px 0 13px -2.5%;
+              }
+          
+              .desc{
+                margin: 0 21px 56px -2.5%;
+              }
+        
+              .logos{    
+                .apple-logo{
+                  margin: -20px 0 17px -7%;
+                }
+          
+                .google-logo{
+                  margin: -20px 0 17px 37.5%;
+                }
+              }
+            }
+            .hand{
+              margin: -19.8% 10px 0 16%;
+            }
+          }      
+        }
+  
+        .content-holder{  
+          .content-pockets{
+            padding: 40px 0 0 0;
+  
+            &:nth-child(1){
+              .logo{
+                margin: 6px 0 24px -1.5%;
+              }
+  
+              .text{      
+                margin: 86px 0 28px -25px;
+
+                width: 425px;
+              }
+  
+              u{
+                margin: 15px 0 0 -25px;
+              }
+            }
+  
+            &:nth-child(2){
+              width: 34.33%;
+              .logo{
+                margin: -70px 0 0 70px;
+              }
+              
+              .text{
+                margin: 24px 0 0 74px;
+
+                width: 420px;
+              }
+  
+              u{
+                margin: 38px 0 0 74px;
+              }
+            }
+  
+            &:nth-child(3){
+              width: 32.33%;
+              .logo{    
+                margin: -93px 0 21px 101px;
+              }
+  
+              .number{
+                padding: 13px 0 0 98px;
+              }
+  
+              u{
+                margin: 71px 0 0 103px;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .content-tupperware{
+      padding: 37px 73px;
+      .fb-logo{
+        margin-right: 7px;
+      }
+  
+      .ig-logo{
+        margin-right: 4px;
+      }
+  
+      .in-logo{
+        margin-right: 4px;
+      }
+  
+      .em-logo{
+        margin: 0 16px 0 16px;
+      }
+  
+      .p-logo{
+        margin: 0 65px 0 0;
       }
     }
   }
@@ -352,10 +445,6 @@ footer{
     .content-tupperware{
       padding: 20px 42px;
   
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-  
       .fb-logo{
         margin-right: 7px;
         width: 50px;
@@ -383,19 +472,13 @@ footer{
     }
   
     .content-holder{
-      ul{ 
-        position: relative;
-      
+      ul{   
         margin: 0;
-      
-        list-style-type: none;
         li{ 
-          display: inline-block;
           padding-left:35px;
       
           a{
             font-size: 15px;
-            color:$dark-grey;
           }
         }
       }
@@ -476,7 +559,7 @@ footer{
               }
 
               .text{
-                padding: 29px 20px 0 5px;
+                margin: 29px 20px 0 45px;
               }
   
               u{
@@ -506,54 +589,45 @@ footer{
     }
   
     .content-tupperware{
-      padding: 20px 15px;
-  
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      padding: 20px 11%;
 
       .content-holder{
         ul{ 
-          position: relative;
-        
           margin: 0;
-        
-          list-style-type: none;
           li{ 
-            display: inline-block;
-            padding-left:5px;
+            padding-left: 5px;
         
             a{
               font-size: 14px;
-              color:$dark-grey;
             }
           }
         }
       }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 830px){
+  footer{
+    .container{
+      .container-bg{  
+        .content-holder{    
+          .content-pockets{  
+            &:nth-child(3){
+              .logo{
+                margin: -14% 0 0 6%;
+              }
   
-      .fb-logo{
-        margin-right: 7px;
-        width: 50px;
-      }
-  
-      .ig-logo{
-        margin-right: 5px;
-        width: 50px;
-      }
-  
-      .in-logo{
-        margin-right: 6px;
-        width: 50px;
-      }
-  
-      .em-logo{
-        margin: -5px 16px 0 16px;
-        width: 52px;
-      }
-  
-      .p-logo{
-        margin: -5px 35px 0 0;
-        width: 52px;
+              .number{
+                margin: -3% 20px 0 -2%;
+              }
+      
+              u{
+                margin: 11.5% 0 0 6%;
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -661,9 +735,24 @@ footer{
         }
       }
     }
-  
+
+    .content-holder{
+      ul{  
+        margin: 0;
+        padding: 0;
+        li{ 
+          padding-left: 5px;
+      
+          a{
+            font-size: 15px;
+            color:$dark-grey;
+          }
+        }
+      }
+    }  
+
     .content-tupperware{
-      padding: 16px 30px;
+      padding: 16px 90px;
   
       .fb-logo{
         margin-right: 7px;
@@ -690,45 +779,152 @@ footer{
         width: 45px;
       }
     }
-  
-    .content-holder{
-      ul{ 
-        position: relative;
-      
-        margin: 0;
-        padding: 0;
-      
-        list-style-type: none;
-        li{ 
-          display: inline-block;
-          padding-left: 5px;
-      
-          a{
-            font-size: 15px;
-            color:$dark-grey;
-          }
-        }
-      }
-    }
   }
 }
 
 @media (min-width: 596px) and (max-width: 677px) {
-  footer{ 
+  footer{
+    margin-top: 70px;
+  
+    .img-leaves{
+      display: none;
+    }
+  
     .container{
       .container-bg{
+        .content-box{    
+          .content-wrapper{
+            .text{
+              .title{
+                margin: 29px 0 9px 8%;
+                font-size: 22px;
+              }
+          
+              .desc{
+                margin: 12px 21px 19px 8%;
+                font-size: 14px;
+              }
+        
+              .logos{
+                margin-bottom: 4%;
+                .apple-logo{
+                  margin: 11px 0 0 13%;
+                  img{
+                    width: 140px;
+                  }
+                }
+                .google-logo{
+                  margin-left: 35%;
+                  img{
+                    width: 140px;
+                  }
+                }
+              }
+            }
+            .hand{
+              margin: -4% 10px 0 5%;
+              width: 90%;
+            }
+          }      
+        }
+  
         .content-holder{    
           .content-pockets{
-            &:nth-child(3){    
+            padding: 40px 0 0 0;
+  
+            &:nth-child(1){    
+              .logo{
+                width: 55px;
+                margin: 8px 0 10px 5.7%;
+              }
+
+              .text{
+                margin: 76px 20px 15px 17%;
+              }
+
               u{
-                margin: 16% 0 0 6%;
+                margin: 15px 0 0 17%;
+              }
+            }
+  
+            &:nth-child(2){
+              .logo{
+                width: 55px;
+                margin: -7% 0 44px 6%;
+              }
+
+              .text{
+                padding: 29px 20px 0 30px;
+                margin: 0;
+              }
+  
+              u{
+                margin: 3% 0 0 4%;
+              }
+            }
+  
+            &:nth-child(3){
+              .logo{
+                width: 40px;
+    
+                margin: -14% 0 0 6%;
+              }
+  
+              .number{
+                margin: -6% 20px 0 -2%;
+                font-size: 30px;
+              }
+      
+              u{
+                margin: 12% 0 0 6%;
+                font-size: 13px;
               }
             }
           }
         }
       }
-      .content-tupperware{
-        padding: 16px 20px;
+    }
+
+    .content-holder{
+      ul{  
+        margin: 0;
+        padding: 0;
+        li{ 
+          padding-left: 5px !important;
+      
+          a{
+            font-size: 13px !important;
+          }
+        }
+      }
+    }  
+
+    .content-tupperware{
+      padding: 16px 90px;
+  
+      .fb-logo{
+        margin-right: 7px;
+        width: 40px;
+      }
+  
+      .ig-logo{
+        margin-right: 5px;
+        width: 40px;
+      }
+  
+      .in-logo{
+        margin-right: 2px;
+        width: 40px;
+      }
+  
+      .em-logo{
+        margin: -5px 5px 0 5px;
+        width: 45px;
+      }
+  
+      .p-logo{
+        margin: -5px 0 0 0;
+        width: 45px;
       }
     }
   }
@@ -748,8 +944,21 @@ footer{
           }
         }
       }
+      .content-holder{
+        ul{  
+          margin: 0;
+          padding: 0;
+          li{ 
+            padding-left: 5px !important;
+        
+            a{
+              font-size: 14px;
+            }
+          }
+        }
+      }
       .content-tupperware{
-        padding: 16px 10px;
+        padding: 16px 70px;
       }
     }
   }
@@ -757,45 +966,675 @@ footer{
 
 @include respond-to(xs) {
   footer {
-    .content-tupperware{
-      padding: 15px 0;
-  
-      .fb-logo{
-        margin-right: 7px;
-        width: 36px;
-      }
-  
-      .ig-logo{
-        margin-right: 7px;
-        width: 36px;
-      }
-  
-      .in-logo{
-        margin-right: 0px;
-        width: 36px;
-      }
-  
-      .em-logo{
-        margin: -5px 10px 0 10px;
-        width: 38px;
-      }
-  
-      .p-logo{
-        margin: -5px 25px 0 0;
-        width: 38px;
-      }
+    margin-top: 0px;
+
+    .img-leaves{
+      display: none;
     }
+    .container{
+      .container-bg{
+        padding-bottom: 40%;
+
+        .content-box{
+          .content-wrapper{
+            .text{
+              .title{
+                margin: 16% 0 10px 8%;
+                width: 100%;
+          
+                font-size: 30px;
+              }
+          
+              .desc{
+                margin: 8px 0 20px 8%;
+                width: 450px;
+          
+                font-size: 18px;
+              }
+        
+              .logos{        
+                .apple-logo{
+                  margin: 5% 0 10% 9%;
+                  
+                  img{
+                    width: 240%;
+                  }
+                }
+          
+                .google-logo{
+                  margin: 5% 0 10% 30%;
+
+                  img{
+                    width: 218%;
+                  }
+                }
+              }
+            }
+            .hand{
+              display: none;
+            }
+          }      
+        }
   
-    .content-holder{
-      ul{ 
-        margin: 0;
-        padding: 0px 0 0 20px;
-        li{ 
-          padding-left:8px;
-          a{
-            font-size: 14px;
+        .content-holder{  
+          flex-direction: column;
+
+          border: none;
+          .content-pockets{
+            padding: 40px 0 0 0;
+  
+            &:nth-child(1){ 
+              width: 100%;
+
+              .logo{
+                width: 52px;
+                margin: 0 0 0 5%;
+              }
+  
+              .text{
+                font-size: 18px;
+      
+                margin: 10% 0 2% 5%;
+                width: 450px;
+              }
+  
+              u{
+                font-size: 16px;
+
+                margin: 10% 0 0 5%;
+              }
+            }
+  
+            &:nth-child(2){  
+              width: 100%;
+
+              border: none;
+              .logo{
+                width: 51px;
+                margin: 0 0 0 5%;
+              }
+
+              .text{
+                font-size: 18px;
+      
+                margin: 13% 0 0 5%;
+                width: 450px;
+              }
+  
+              u{
+                font-size: 16px;
+
+                margin: 3% 0 0 5%;
+              }
+            }
+  
+            &:nth-child(3){ 
+              width: 100%;
+              .logo{
+                width: 38px;
+    
+                margin: 8% 0 0 5%;
+              }
+  
+              .number{
+                font-size: 32px;
+
+                margin: 17% 0 0 -5%;
+                width: 450px;
+              }
+  
+              u{
+                font-size: 16px;
+
+                margin: 26% 0 0 4.5%;
+              }
+            }
           }
         }
+      }
+
+      .content-tupperware{
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 425px) and (max-width: 490px) {
+  footer {
+    margin-top: 0px;
+
+    .img-leaves{
+      display: none;
+    }
+    .container{
+      .container-bg{
+        padding-bottom: 40%;
+
+        .content-box{
+          .content-wrapper{
+            .text{
+              .title{
+                margin: 16% 0 10px 8%;
+          
+                font-size: 26px;
+              }
+          
+              .desc{
+                margin: 8px 0 20px 8%;
+                width: 400px;
+          
+                font-size: 17px;
+              }
+        
+              .logos{        
+                .apple-logo{
+                  margin: 5% 0 10% 9%;
+                  
+                  img{
+                    width: 240%;
+                  }
+                }
+          
+                .google-logo{
+                  margin: 5% 0 10% 30%;
+
+                  img{
+                    width: 218%;
+                  }
+                }
+              }
+            }
+            .hand{
+              display: none;
+            }
+          }      
+        }
+  
+        .content-holder{  
+          flex-direction: column;
+
+          border: none;
+          .content-pockets{
+            padding: 40px 0 0 0;
+  
+            &:nth-child(1){ 
+              width: 100%;
+
+              .logo{
+                width: 52px;
+                margin: 0 0 0 5%;
+              }
+  
+              .text{
+                font-size: 17px;
+      
+                margin: 10% 0 2% 5%;
+                width: 400px;
+              }
+  
+              u{
+                font-size: 16px;
+
+                margin: 10% 0 0 5%;
+              }
+            }
+  
+            &:nth-child(2){  
+              width: 100%;
+
+              border: none;
+              .logo{
+                width: 51px;
+                margin: 0 0 0 5%;
+              }
+
+              .text{
+                font-size: 17px;
+      
+                margin: 13% 0 0 5%;
+                width: 400px;
+              }
+  
+              u{
+                font-size: 16px;
+
+                margin: 3% 0 0 5%;
+              }
+            }
+  
+            &:nth-child(3){ 
+              width: 100%;
+              .logo{
+                width: 38px;
+    
+                margin: 8% 0 0 5%;
+              }
+  
+              .number{
+                font-size: 30px;
+
+                margin: 17% 0 0 -5%;
+                width: 400px;
+              }
+  
+              u{
+                font-size: 16px;
+
+                margin: 26% 0 0 4.5%;
+              }
+            }
+          }
+        }
+      }
+
+      .content-tupperware{
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 395px) and (max-width: 424px) {
+  footer {
+    margin-top: 0px;
+
+    .img-leaves{
+      display: none;
+    }
+    .container{
+      .container-bg{
+        padding-bottom: 45%;
+
+        .content-box{
+          .content-wrapper{
+            .text{
+              .title{
+                margin: 16% 0 10px 8%;
+          
+                font-size: 24px;
+              }
+          
+              .desc{
+                margin: 8px 0 20px 8%;
+                width: 320px;
+          
+                font-size: 16px;
+              }
+        
+              .logos{        
+                .apple-logo{
+                  margin: 5% 0 10% 9%;
+                  
+                  img{
+                    width: 280%;
+                  }
+                }
+          
+                .google-logo{
+                  margin: 5% 0 10% 38%;
+
+                  img{
+                    width: 245%;
+                  }
+                }
+              }
+            }
+            .hand{
+              display: none;
+            }
+          }      
+        }
+  
+        .content-holder{  
+          flex-direction: column;
+
+          border: none;
+          .content-pockets{
+            padding: 40px 0 0 0;
+  
+            &:nth-child(1){ 
+              width: 100%;
+
+              .logo{
+                width: 52px;
+                margin: 0 0 0 5%;
+              }
+  
+              .text{
+                font-size: 16px;
+      
+                margin: 12% 0 2% 5%;
+                width: 320px;
+              }
+  
+              u{
+                font-size: 15px;
+
+                margin: 10% 0 0 5%;
+              }
+            }
+  
+            &:nth-child(2){  
+              width: 100%;
+
+              border: none;
+              .logo{
+                width: 51px;
+                margin: 0 0 0 5%;
+              }
+
+              .text{
+                font-size: 16px;
+      
+                margin: 15% 0 0 5%;
+                width: 320px;
+              }
+  
+              u{
+                font-size: 15px;
+
+                margin: 3% 0 0 5%;
+              }
+            }
+  
+            &:nth-child(3){ 
+              width: 100%;
+              .logo{
+                width: 38px;
+    
+                margin: 8% 0 0 5%;
+              }
+  
+              .number{
+                font-size: 28px;
+
+                margin: 19% 0 0 -8%;
+                width: 320px;
+              }
+  
+              u{
+                font-size: 15px;
+
+                margin: 30% 0 0 4.5%;
+              }
+            }
+          }
+        }
+      }
+
+      .content-tupperware{
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 360px) and (max-width: 394px) {
+  footer {
+    margin-top: 0px;
+
+    .img-leaves{
+      display: none;
+    }
+    .container{
+      .container-bg{
+        padding-bottom: 50%;
+
+        .content-box{
+          .content-wrapper{
+            .text{
+              .title{
+                margin: 16% 0 10px 8%;
+          
+                font-size: 22px;
+              }
+          
+              .desc{
+                margin: 8px 0 20px 8%;
+                width: 320px;
+          
+                font-size: 16px;
+              }
+        
+              .logos{        
+                .apple-logo{
+                  margin: 5% 0 10% 9%;
+                  
+                  img{
+                    width: 280%;
+                  }
+                }
+          
+                .google-logo{
+                  margin: 5% 0 10% 38%;
+
+                  img{
+                    width: 245%;
+                  }
+                }
+              }
+            }
+            .hand{
+              display: none;
+            }
+          }      
+        }
+  
+        .content-holder{  
+          flex-direction: column;
+
+          border: none;
+          .content-pockets{
+            padding: 40px 0 0 0;
+  
+            &:nth-child(1){ 
+              width: 100%;
+
+              .logo{
+                width: 52px;
+                margin: 0 0 0 5%;
+              }
+  
+              .text{
+                font-size: 16px;
+      
+                margin: 12% 0 2% 5%;
+                width: 320px;
+              }
+  
+              u{
+                font-size: 15px;
+
+                margin: 10% 0 0 5%;
+              }
+            }
+  
+            &:nth-child(2){  
+              width: 100%;
+
+              border: none;
+              .logo{
+                width: 51px;
+                margin: 0 0 0 5%;
+              }
+
+              .text{
+                font-size: 16px;
+      
+                margin: 15% 0 0 5%;
+                width: 320px;
+              }
+  
+              u{
+                font-size: 15px;
+
+                margin: 3% 0 0 5%;
+              }
+            }
+  
+            &:nth-child(3){ 
+              width: 100%;
+              .logo{
+                width: 38px;
+    
+                margin: 8% 0 0 5%;
+              }
+  
+              .number{
+                font-size: 28px;
+
+                margin: 19% 0 0 -8%;
+                width: 320px;
+              }
+  
+              u{
+                font-size: 15px;
+
+                margin: 30% 0 0 4.5%;
+              }
+            }
+          }
+        }
+      }
+
+      .content-tupperware{
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 359px) {
+  footer {
+    margin-top: 0px;
+
+    .img-leaves{
+      display: none;
+    }
+    .container{
+      .container-bg{
+        padding-bottom: 50%;
+
+        .content-box{
+          .content-wrapper{
+            .text{
+              .title{
+                margin: 16% 0 10px 8%;
+          
+                font-size: 19px;
+              }
+          
+              .desc{
+                margin: 8px 0 20px 8%;
+                width: 280px;
+          
+                font-size: 15px;
+              }
+        
+              .logos{        
+                .apple-logo{
+                  margin: 5% 0 10% 9%;
+                  
+                  img{
+                    width: 280%;
+                  }
+                }
+          
+                .google-logo{
+                  margin: 5% 0 10% 38%;
+
+                  img{
+                    width: 245%;
+                  }
+                }
+              }
+            }
+            .hand{
+              display: none;
+            }
+          }      
+        }
+  
+        .content-holder{  
+          flex-direction: column;
+
+          border: none;
+          .content-pockets{
+            padding: 40px 0 0 0;
+  
+            &:nth-child(1){ 
+              width: 100%;
+
+              .logo{
+                width: 49px;
+                margin: 0 0 0 5%;
+              }
+  
+              .text{
+                font-size: 15px;
+      
+                margin: 14% 0 2% 5%;
+                width: 280px;
+              }
+  
+              u{
+                font-size: 14px;
+
+                margin: 10% 0 0 5%;
+              }
+            }
+  
+            &:nth-child(2){  
+              width: 100%;
+
+              border: none;
+              .logo{
+                width: 48px;
+                margin: 0 0 0 5%;
+              }
+
+              .text{
+                font-size: 15px;
+      
+                margin: 17% 0 0 5%;
+                width: 280px;
+              }
+  
+              u{
+                font-size: 14px;
+
+                margin: 3% 0 0 5%;
+              }
+            }
+  
+            &:nth-child(3){ 
+              width: 100%;
+              .logo{
+                width: 36px;
+    
+                margin: 8% 0 0 5%;
+              }
+  
+              .number{
+                font-size: 26px;
+
+                margin: 22% 0 0 -11%;
+                width: 280px;
+              }
+  
+              u{
+                font-size: 14px;
+
+                margin: 33% 0 0 4.5%;
+              }
+            }
+          }
+        }
+      }
+
+      .content-tupperware{
+        display: none;
       }
     }
   }
