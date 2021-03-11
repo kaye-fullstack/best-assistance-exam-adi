@@ -550,8 +550,7 @@
 
           .content-pocket2{
             position: relative;
-            padding: 7px 0 11px 0;
-            left: 131px;
+            padding: 7px 0 11px 131px;
 
             width: 939px;
 
@@ -574,8 +573,7 @@
 
           .content-pocket3{
             position: relative;
-            padding: 8px 0 16px 0;
-            left: 131px;
+            padding: 8px 0 16px 131px;
 
             width: 939px;
 
@@ -871,7 +869,6 @@
       padding-bottom: 45px;
 
       .content-holder {
-
         &:nth-child(1n){
           width: 50%
         }
@@ -1176,13 +1173,11 @@
             }
   
             .content-pocket2{
-              padding: 7px 0 11px 9%; 
-              left: 0;
+              padding: 7px 0 11px 85px; 
             }
   
             .content-pocket3{
-              padding: 8px 0 16px 9%;
-              left: 0;
+              padding: 8px 0 16px 85px;
             }
           }
   
@@ -1197,7 +1192,6 @@
 }
 
 @media (min-width: 800px) and (max-width: 900px){
-
   .section-intro {
     .sidebar-item {
       margin: 300px 0 0 81% !important;
@@ -1215,11 +1209,14 @@
       margin: -29px 0 45px 13%;
       width: 700px !important;
     }
+
+    .btn{
+      margin: 36px 0 0 9.5% !important;
+    }
   }
 }
 
 @media (min-width: 768px) and (max-width: 799px){
-
   .section-intro {
     .sidebar-item {
       margin: 300px 0 0 77.5% !important;
@@ -1266,12 +1263,7 @@
         margin: 1% 0 0 -40%;
       }
   
-      .logos{  
-        .content-wrapper{
-          margin-bottom: 50px;
-
-        }
-  
+      .logos{    
         .first{
           margin: 14px 0 0 54px;
           width: 65px;
@@ -1424,12 +1416,10 @@
   
             .content-pocket2{
               padding: 7px 0 11px 5.3%; 
-              left: 0;
             }
   
             .content-pocket3{
               padding: 8px 0 16px 5.3%;
-              left: 0;
             }
           }
   
@@ -1459,44 +1449,18 @@
   }
 
   .section-is{
-    padding: 0px 0 175px 0;
-
     .content-wrapper{
       .content-holder{
         .title{
-          margin: -48% 0 0 3%;
           font-size: 32px !important;
         }
 
         .title-blue{
-          margin: 0 0 44% 3%;
           font-size: 32px !important;
         }
 
         .desc{
-          margin: -29px 0 45px 3.3%;
           width: 500px !important;
-        }
-
-        .content-features{  
-          .content-pocket1{
-            margin: 4px 22% 12px 0;
-          }
-
-          .content-pocket2{
-            padding: 7px 0 11px 3.3%; 
-            left: 0;
-          }
-
-          .content-pocket3{
-            padding: 8px 0 16px 3.3%;
-            left: 0;
-          }
-        }
-
-        .btn{
-          padding: 18px 53px;
-          margin: 36px 0 0 5%;
         }
       }
     }
@@ -1542,30 +1506,6 @@
             width: 65px;
           }
         }
-  
-      .logos-text{
-        .text{
-          .first-text{
-            margin: 20px 0 0 90px;
-  
-            font-size: 18px;
-          }
-  
-          .second-text{
-            margin: -51px 0 0 222px;
-            width: 105px;
-  
-            font-size: 18px;
-          }
-  
-          .third-text{
-            margin: -49px 0 0 380px;
-            width: 90px;
-  
-            font-size: 18px;
-          }
-        }
-      }
       }
 
       .logos-text{
@@ -1657,7 +1597,7 @@
         margin: 120px 0 0 -8%;
 
         background-size: 84% 75%;
-        .content-pocket{
+        .content-pocket2{
           .logos{
             .first-logo{
               margin: 20px 0 0 102px;
@@ -1801,7 +1741,7 @@
     }
 
     .section-is{
-      padding: 0px 0 100px 0;
+      padding: 0px 0 24% 0;
   
       .content-wrapper{
         .img{  
@@ -1821,7 +1761,7 @@
           }
   
           .desc{
-            margin: -29px 0 45px 3.3%;
+            margin: -29px 0 45px 3%;
             width: 500px;
           }
   
@@ -1831,13 +1771,11 @@
             }
   
             .content-pocket2{
-              padding: 7px 0 11px 3.3%; 
-              left: 0;
+              padding: 7px 0 11px 3%; 
             }
   
             .content-pocket3{
-              padding: 8px 0 16px 3.3%;
-              left: 0;
+              padding: 8px 0 16px 3%;
             }
           }
   
@@ -1852,6 +1790,15 @@
 }
 
 @media (min-width: 500px) and (max-width: 530px){
+  .section-intro {
+    .logos-text{
+      .text{
+        .first-text{
+          margin: 12px 0 0 17% !important;
+        }
+      }
+    }
+  }
 
   .section-mission{
     .content-holder {
@@ -1859,54 +1806,45 @@
         margin: 110px 0 0 -13% !important;
 
         background-size: 71% 72% !important;
-      }
-      .title{
-        margin: -35px 0 0 14% !important;
-      }
 
-      .content-pocket{
-        .logos{
-          .first-logo{
-            margin: 20px 0 0 52% !important;
-            width: 40px;
+        .title{
+          margin: -35px 0 0 14% !important;
+        }     
+        
+        .content-pocket2{
+          .logos{
+            .first-logo{
+              margin: 20px 0 0 24% !important;
+            }
+
+            .second-logo{
+              margin: 3px 0 0 24% !important;
+            }
+
+            .third-logo{
+              margin: 2px 0 0 24% !important;
+            }
+
+            .fourth-logo{
+              margin: -1px 0 0 24% !important;
+            }
+
+            .small-title{ 
+              margin:-47px 0 15px 34% !important;
+              width: 158px !important;
+            }
+
+            .small-desc{  
+              margin: -12px 0 33px 34% !important;
+              width: 275px !important;
+            }
           }
-
-          .second-logo{
-            margin: 3px 0 0 52% !important;
-            width: 40px;
-          }
-
-          .third-logo{
-            margin: 2px 0 0 52% !important;
-            width: 42px;
-          }
-
-          .fourth-logo{
-            margin: -1px 0 0 52% !important;
-            width: 38px;
-          }
-
-          .small-title{ 
-            margin:-47px 0 15px 70% !important;
-            width: 158px;
-
-            font-size: 16px;
-          }
-
-          .small-desc{  
-            margin: -12px 0 33px 70% !important;
-            width: 275px !important;
-
-            font-size: 16px;
-          }
-        }
+        }        
       }
     }
   }
 
   .section-is{
-    padding: 0px 0 100px 0;
-
     .content-wrapper{
       .img{  
         margin: 60% 0 0 7% !important;
@@ -1955,7 +1893,6 @@
 @media (min-width: 470px) and (max-width: 499px){
   .home {
     .section-intro {
-      padding-bottom: 80px;
       .swiper-container{
         h1{
           width: 375px;
@@ -1969,25 +1906,16 @@
       }
 
       .logos{  
-        padding-top: 10px;
-        .content-wrapper{
-          margin-bottom: 50px;
-          width: 80px;
-        }
-  
         .first{
-          margin: 13px 0 0 66px;
-          width: 65px;
+          margin: 13px 0 0 66px !important;
         }
   
         .second{
-          margin: 10px 0 0 220px;
-          width: 65px;
+          margin: 10px 0 0 220px !important;
         }
   
         .third{
-          margin: 13px 0 0 372px;
-          width: 65px;
+          margin: 13px 0 0 372px !important;
         }
       }
   
@@ -2000,17 +1928,11 @@
           }
   
           .second-text{
-            margin: -51px 0 0 39%;
-            width: 105px;
-  
-            font-size: 18px;
+            margin: -51px 0 0 39% !important;
           }
   
           .third-text{
             margin: -49px 0 0 72%;
-            width: 90px;
-  
-            font-size: 18px;
           }
         }
       }
@@ -2020,36 +1942,11 @@
       .content-holder {
         &:nth-child(2n){
           margin-top: 8%;
-          width: 100%
         }
   
         .content-pocket{
-          width: 290px;
-
           .bullet-point{
             margin-left: 15%; 
-            width: 20px;
-          }
-  
-          .missions{
-            font-size: 14px;
-          }
-
-          .btn-blue{
-            margin: 3.2% 0 0 5%;
-            padding: 14px 14px 14px 0;
-            width: 180px;
-
-            font-size: 13px;
-
-            background-size: 90%;
-          }
-
-          .btn-yellow{
-            margin: 75px 0 0 5%;
-            padding: 14px 12px;
-
-            width: 163px;
           }
         }
       }
@@ -2063,87 +1960,37 @@
           margin: -35px 0 0 70px;
         }
 
-        .content-pocket{
+        .content-pocket2{
           .logos{
             .first-logo{
-              margin: 20px 0 0 125px;
-              width: 40px;
+              margin: 20px 0 0 138px;
             }
   
             .second-logo{
-              margin: 3px 0 0 125px;
-              width: 40px;
+              margin: 3px 0 0 138px;
             }
   
             .third-logo{
-              margin: 2px 0 0 125px;
-              width: 42px;
+              margin: 2px 0 0 138px;
             }
   
             .fourth-logo{
-              margin: -1px 0 0 127px;
-              width: 38px;
+              margin: -1px 0 0 140px;
             }
   
             .small-title{ 
               margin:-47px 0 15px 200px;
-              width: 176px;
-  
-              font-size: 16px;
             }
   
             .small-desc{  
               margin: -12px 0 33px 200px;
-              width: 390px;
-  
-              font-size: 16px;
             }
-          }
-        }
-      }
-
-      .content-pocket{
-        .logos{
-          .first-logo{
-            margin: 20px 0 0 52% !important;
-            width: 40px;
-          }
-
-          .second-logo{
-            margin: 3px 0 0 52% !important;
-            width: 40px;
-          }
-
-          .third-logo{
-            margin: 2px 0 0 52% !important;
-            width: 42px;
-          }
-
-          .fourth-logo{
-            margin: -1px 0 0 52% !important;
-            width: 38px;
-          }
-
-          .small-title{ 
-            margin:-47px 0 15px 70% !important;
-            width: 158px;
-
-            font-size: 16px;
-          }
-
-          .small-desc{  
-            margin: -12px 0 33px 70% !important;
-            width: 275px !important;
-
-            font-size: 16px;
           }
         }
       }
     }
 
-    .section-is{
-      padding: 0px 0 100px 0;
-  
+    .section-is{  
       .content-wrapper{
         .img{  
           margin: 60% 0 0 7% !important;
@@ -2165,27 +2012,6 @@
             margin: -29px 0 45px 3% !important;
             width: 420px !important;
           }
-  
-          .content-features{  
-            .content-pocket1{
-              margin: 4px 22% 12px 0;
-            }
-  
-            .content-pocket2{
-              padding: 7px 0 11px 3% !important; 
-              left: 0;
-            }
-  
-            .content-pocket3{
-              padding: 8px 0 16px 3% !important;
-              left: 0;
-            }
-          }
-  
-          .btn{
-            padding: 18px 53px;
-            margin: 36px 0 0 5%;
-          }
         }
       }
     }
@@ -2195,7 +2021,6 @@
 @media (min-width: 420px) and (max-width: 469px){
   .home {
     .section-intro {
-      padding-bottom: 80px;
       .swiper-container{
         h1{
           width: 375px;
@@ -2209,25 +2034,21 @@
       }
 
       .logos{  
-        padding-top: 10px;
         .content-wrapper{
           margin-bottom: 50px;
           width: 80px;
         }
   
         .first{
-          margin: 13px 0 0 55px;
-          width: 65px;
+          margin: 13px 0 0 62px !important;
         }
   
         .second{
-          margin: 10px 0 0 190px;
-          width: 65px;
+          margin: 10px 0 0 202px !important;
         }
   
         .third{
-          margin: 13px 0 0 340px;
-          width: 65px;
+          margin: 13px 0 0 350px !important;
         }
       }
   
@@ -2241,16 +2062,10 @@
   
           .second-text{
             margin: -51px 0 0 39%;
-            width: 105px;
-  
-            font-size: 18px;
           }
   
           .third-text{
             margin: -49px 0 0 72%;
-            width: 90px;
-  
-            font-size: 18px;
           }
         }
       }
@@ -2260,90 +2075,46 @@
       padding-bottom: 34px;
 
       .content-holder {
-        &:nth-child(2n){
-          margin-top: 15%;
-          width: 100%
-        }
-
-        .title{  
-          margin: -35px 0 0 40px;
-          font-size: 30px;
-        }
-  
         .content-pocket{
-          width: 290px;
-
           .bullet-point{
             margin-left: 15%; 
-            width: 20px;
-          }
-  
-          .missions{
-            font-size: 14px;
-          }
-
-          .btn-blue{
-            margin: 3.2% 0 0 5%;
-            padding: 14px 14px 14px 0;
-            width: 180px;
-
-            font-size: 13px;
-
-            background-size: 90%;
-          }
-
-          .btn-yellow{
-            margin: 75px 0 0 5%;
-            padding: 14px 12px;
-
-            width: 163px;
           }
         }
       }
   
       .box{ 
-        margin: 100px 0 0 -16% !important;
+        margin: 120px 0 0 -16% !important;
 
-        background-size: 67% 72%;
-
+        background-size: 67% 65% !important;
         .title{
-          margin :-35px 0 0 100px;
+          margin: -35px 0 0 82px;
         }
 
-        .content-pocket{
+        .content-pocket2{
           .logos{
             .first-logo{
-              margin: 20px 0 0 54%;
-              width: 40px;
+              margin: 20px 0 0 148px !important;
             }
   
             .second-logo{
-              margin: 3px 0 0 54%;
-              width: 40px;
+              margin: 3px 0 0 148px !important;
             }
   
             .third-logo{
-              margin: 2px 0 0 54%;
-              width: 42px;
+              margin: 2px 0 0 148px !important;
             }
   
             .fourth-logo{
-              margin: -1px 0 0 54%;
-              width: 38px;
+              margin: -1px 0 0 150px !important;
             }
-  
+
             .small-title{ 
-              margin:-47px 0 15px 75%;
-              width: 150px;
-  
-              font-size: 15px;
+              margin:-47px 0 15px 200px;
             }
   
             .small-desc{  
-              margin: -12px 0 33px 75%;
-              width: 310px;
-  
-              font-size: 15px;
+              margin: -12px 0 33px 200px !important;
+              width: 295px !important;
             }
           }
         }
@@ -2351,94 +2122,16 @@
     }
 
     .section-healthy{
-      margin-bottom: 25px;
-
       .title{
         margin-left: 20px !important;
-
-        font-size: 30px;
       }
 
       .desc{
         margin-left: 21px !important;
-
-        font-size: 14px;
       }
 
       .swiper-container{
         padding: 10px 0 80px 24px !important;
-        .swiper-slide{
-
-          &:nth-child(1n){
-            width: 400px;  
-    
-            .caption{
-              margin: 80px 0 0 -115px;
-
-              font-size: 20px;
-              line-height: 24px;
-            }
-  
-            .desc{              
-              margin: 252px 295px 0 0;
-              width: 50px;
-              height: 25px;
-  
-              font-size: 12px;    
-            } 
-
-            img{
-              width: 400px;
-              margin: 0 0 0 -1%;
-            }      
-          }
-
-          &:nth-child(2n){
-            width: 200px;
-  
-            .caption{         
-              margin: 80px 0 0 125px;
-              width: 165px;
-
-              font-size: 20px;
-            }
-  
-            .desc{             
-              margin: 250px 55px 0 0px;
-              width: 102px;
-              height: 26px;
-  
-              font-size: 13px;
-            }
-
-            img{
-              width: 200px;
-            }
-          }
-
-          &:nth-child(3n){
-            width: 200px;
-  
-            .caption{         
-              margin: 80px 0 0 125px;
-              width: 165px;
-
-              font-size: 20px;
-            }
-  
-            .desc{             
-              margin: 250px 55px 0 0px;
-              width: 102px;
-              height: 26px;
-  
-              font-size: 13px;
-            }
-
-            img{
-              width: 200px;
-            }
-          }
-        }
       }
 
       .btn{
@@ -2511,7 +2204,6 @@
 @media (min-width: 380px) and (max-width: 419px){
   .home {
     .section-intro {
-      padding-bottom: 80px;
       .swiper-container{
         h1{
           width: 300px;
@@ -2524,49 +2216,32 @@
         }
       }
 
-      .logos{  
-        padding-top: 10px;
-        .content-wrapper{
-          margin-bottom: 50px;
-          width: 80px;
-        }
-  
+      .logos{    
         .first{
-          margin: 13px 0 0 45px;
-          width: 65px;
+          margin: 13px 0 0 45px !important;
         }
   
         .second{
-          margin: 10px 0 0 165px;
-          width: 65px;
+          margin: 10px 0 0 165px !important;
         }
   
         .third{
-          margin: 13px 0 0 305px;
-          width: 65px;
+          margin: 13px 0 0 305px !important;
         }
       }
   
       .logos-text{
         .text{
           .first-text{
-            margin: 20px 0 0 13%;
-  
-            font-size: 18px;
+            margin: 20px 0 0 10% !important;
           }
   
           .second-text{
-            margin: -51px 0 0 39%;
-            width: 105px;
-  
-            font-size: 18px;
+            margin: -51px 0 0 36% !important;
           }
   
           .third-text{
-            margin: -49px 0 0 72%;
-            width: 90px;
-  
-            font-size: 18px;
+            margin: -49px 0 0 69% !important;
           }
         }
       }
@@ -2576,88 +2251,53 @@
       padding-bottom: 34px;
 
       .content-holder {
-        &:nth-child(2n){
-          margin-top: 15%;
-          width: 100%
-        }
-
-        .img{
-          display: none;
-        }
-
         .title{  
           margin: -35px 0 0 50px;
-          font-size: 30px;
         }
   
         .content-pocket{
-          width: 290px;
-
           .bullet-point{
             margin-left: 15%; 
-            width: 20px;
-          }
-  
-          .missions{
-            font-size: 14px;
-          }
-
-          .btn-blue{
-            margin: 3.2% 0 0 5%;
-            padding: 14px 14px 14px 0;
-            width: 180px;
-
-            font-size: 13px;
-
-            background-size: 90%;
-          }
-
-          .btn-yellow{
-            margin: 75px 0 0 5%;
-            padding: 14px 12px;
-
-            width: 163px;
           }
         }
       }
   
       .box{ 
-        margin: 100px 0 0 -14% !important;
+        margin: 100px 0 0 -19% !important;
 
-        background-size: 72% 72%;
+        background-size: 61% 65%;
 
-        .content-pocket{
+        .title{
+          margin: -35px 0 0 100px;
+        }
+
+        .content-pocket2{
           .logos{
             .first-logo{
-              margin: 20px 0 0 115px;
-              width: 40px;
+              margin: 20px 0 0 25%;
             }
   
             .second-logo{
-              margin: 3px 0 0 115px;
-              width: 40px;
+              margin: 3px 0 0 25%;
             }
   
             .third-logo{
-              margin: 2px 0 0 115px;
-              width: 42px;
+              margin: 2px 0 0 25%;
             }
   
             .fourth-logo{
-              margin: -1px 0 0 117px;
-              width: 38px;
+              margin: -1px 0 0 25%;
             }
   
             .small-title{ 
-              margin:-47px 0 15px 185px;
-              width: 176px;
-  
+              margin: -47px 0 15px  34%;
+
               font-size: 15px;
             }
   
             .small-desc{  
-              margin: -12px 0 33px 185px;
-              width: 265px;
+              margin: -12px 0 33px  34%;
+              width: 240px;
   
               font-size: 15px;
             }
@@ -2667,105 +2307,20 @@
     }
 
     .section-healthy{
-      margin-bottom: 25px;
-
       .title{
         margin-left: 16px !important;
-
-        font-size: 30px;
       }
 
       .desc{
         margin-left: 17px !important;
-
-        font-size: 14px;
       }
 
       .swiper-container{
         padding: 18px 0 80px 20px !important;
-        .swiper-slide{
-
-          &:nth-child(1n){
-            width: 400px;  
-    
-            .caption{
-              margin: 80px 0 0 -115px;
-
-              font-size: 20px;
-              line-height: 24px;
-            }
-  
-            .desc{              
-              margin: 252px 295px 0 0;
-              width: 50px;
-              height: 25px;
-  
-              font-size: 12px;    
-            } 
-
-            img{
-              width: 400px;
-              margin: 0 0 0 -1%;
-            }      
-          }
-
-          &:nth-child(2n){
-            width: 200px;
-  
-            .caption{         
-              margin: 80px 0 0 125px;
-              width: 165px;
-
-              font-size: 20px;
-            }
-  
-            .desc{             
-              margin: 250px 55px 0 0px;
-              width: 102px;
-              height: 26px;
-  
-              font-size: 13px;
-            }
-
-            img{
-              width: 200px;
-            }
-          }
-
-          &:nth-child(3n){
-            width: 200px;
-  
-            .caption{         
-              margin: 80px 0 0 125px;
-              width: 165px;
-
-              font-size: 20px;
-            }
-  
-            .desc{             
-              margin: 250px 55px 0 0px;
-              width: 102px;
-              height: 26px;
-  
-              font-size: 13px;
-            }
-
-            img{
-              width: 200px;
-            }
-          }
-        }
       }
 
       .btn{
         margin: -30px 0 0 18px !important;
-        padding: 14px 14px 14px 0;
-        width: 180px;
-
-        font-size: 13px;
-
-        background-size: 90%;
-
       }
     }
 
@@ -2815,7 +2370,6 @@
           }
   
           .btn{
-            padding: 18px 53px;
             margin: 10px 0 0 4%;
           }
         }
@@ -2824,10 +2378,9 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 379px){
+@media (min-width: 351px) and (max-width: 379px){
   .home {
     .section-intro {
-      padding-bottom: 80px;
       .swiper-container{
         h1{
           width: 300px;
@@ -2840,26 +2393,17 @@
         }
       }
 
-      .logos{  
-        padding-top: 10px;
-        .content-wrapper{
-          margin-bottom: 50px;
-          width: 80px;
-        }
-  
+      .logos{    
         .first{
-          margin: 13px 0 0 20px;
-          width: 65px;
+          margin: 13px 0 0 22px !important;
         }
   
         .second{
-          margin: 10px 0 0 125px;
-          width: 65px;
+          margin: 10px 0 0 134px !important;
         }
   
         .third{
-          margin: 13px 0 0 240px;
-          width: 65px;
+          margin: 13px 0 0 262px !important;
         }
       }
   
@@ -2867,20 +2411,16 @@
         .text{
           .first-text{
             margin: 20px 0 0 5%;
-  
-            font-size: 16px;
           }
   
           .second-text{
             margin: -42px 0 0 30%;
-            width: 105px;
-  
+
             font-size: 16px;
           }
   
           .third-text{
             margin: -46px 0 0 66%;
-            width: 90px;
   
             font-size: 16px;
           }
@@ -2892,49 +2432,13 @@
       padding-bottom: 34px;
 
       .content-holder {
-        &:nth-child(2n){
-          margin-top: 15%;
-          width: 100%
-        }
-
-        .img{
-          display: none;
-        }
-
         .title{  
-          margin: -35px 0 0 40px;
-          font-size: 30px;
-          
           width: 245px;
         }
   
         .content-pocket{
-          width: 290px;
-
           .bullet-point{
             margin-left: 15%; 
-            width: 20px;
-          }
-  
-          .missions{
-            font-size: 14px;
-          }
-
-          .btn-blue{
-            margin: 3.2% 0 0 5%;
-            padding: 14px 14px 14px 0;
-            width: 180px;
-
-            font-size: 13px;
-
-            background-size: 90%;
-          }
-
-          .btn-yellow{
-            margin: 75px 0 0 5%;
-            padding: 14px 12px;
-
-            width: 163px;
           }
         }
       }
@@ -2942,46 +2446,41 @@
       .box{ 
         margin: 100px 0 0 -23% !important;
 
-        background-size: 55% 72% !important;
+        background-size: 55% 58% !important;
 
         .title{
           margin: -35px 0 0 17%;
-          font-size: 28px;
-          width: 412px;
+          font-size: 26px;
+          width: 390px;
         }
 
-        .content-pocket{
+        .content-pocket2{
           .logos{
             .first-logo{
-              margin: 20px 0 0 58%;
-              width: 38px;
+              margin: 20px 0 0 27%;
             }
   
             .second-logo{
-              margin: 3px 0 0 58%;
-              width: 38px;
+              margin: 3px 0 0 27%;
             }
   
             .third-logo{
-              margin: 2px 0 0 58%;
-              width: 40px;
+              margin: 2px 0 0 27%;
             }
   
             .fourth-logo{
-              margin: -1px 0 0 58%;
-              width: 36px;
+              margin: -1px 0 0 27%;
             }
   
             .small-title{ 
-              margin:-47px 0 15px 75%;
-              width: 176px;
+              margin:-47px 0 15px 35%;
   
               font-size: 15px;
             }
   
             .small-desc{  
-              margin: -12px 0 33px 75%;
-              width: 250px;
+              margin: -12px 0 33px 35%;
+              width: 240px;
   
               font-size: 15px;
             }
@@ -2991,105 +2490,20 @@
     }
 
     .section-healthy{
-      margin-bottom: 25px;
-
       .title{
         margin-left: 18px !important;
-
-        font-size: 30px;
       }
 
       .desc{
         margin-left: 20px !important;
-
-        font-size: 14px;
       }
 
       .swiper-container{
         padding: 5px 0 80px 22px !important;
-        .swiper-slide{
-
-          &:nth-child(1n){
-            width: 400px;  
-    
-            .caption{
-              margin: 80px 0 0 -115px;
-
-              font-size: 20px;
-              line-height: 24px;
-            }
-  
-            .desc{              
-              margin: 252px 295px 0 0;
-              width: 50px;
-              height: 25px;
-  
-              font-size: 12px;    
-            } 
-
-            img{
-              width: 400px;
-              margin: 0 0 0 -1%;
-            }      
-          }
-
-          &:nth-child(2n){
-            width: 200px;
-  
-            .caption{         
-              margin: 80px 0 0 125px;
-              width: 165px;
-
-              font-size: 20px;
-            }
-  
-            .desc{             
-              margin: 250px 55px 0 0px;
-              width: 102px;
-              height: 26px;
-  
-              font-size: 13px;
-            }
-
-            img{
-              width: 200px;
-            }
-          }
-
-          &:nth-child(3n){
-            width: 200px;
-  
-            .caption{         
-              margin: 80px 0 0 125px;
-              width: 165px;
-
-              font-size: 20px;
-            }
-  
-            .desc{             
-              margin: 250px 55px 0 0px;
-              width: 102px;
-              height: 26px;
-  
-              font-size: 13px;
-            }
-
-            img{
-              width: 200px;
-            }
-          }
-        }
       }
 
       .btn{
         margin: -45px 0 0 18px !important;
-        padding: 14px 14px 14px 0;
-        width: 180px;
-
-        font-size: 13px;
-
-        background-size: 90%;
-
       }
     }
 
@@ -3127,20 +2541,17 @@
             }
   
             .content-pocket2{
-              left: 0;
               margin: 7px 9% 11px 0 !important; 
               width: 300px;
             }
   
             .content-pocket3{
-              left: 0;
               margin: 8px 9% 16px 0 !important;
               width: 300px;
             }
           }
   
           .btn{
-            padding: 18px 53px;
             margin: 10px 0 0 5%;
           }
         }
@@ -3151,11 +2562,167 @@
 
 @media (min-width: 340px) and (max-width: 350px){
   .home {
+    .section-intro {
+      .swiper-container{
+        h1{
+          width: 300px;
+          margin: 30px 930px 0 0;
+
+          font-size: 37px;
+        }
+        .swiper-slide{
+          padding: 0 0 0 18px;
+        }
+      }
+
+      .logos{    
+        .first{
+          margin: 13px 0 0 22px !important;
+        }
+  
+        .second{
+          margin: 10px 0 0 134px !important;
+        }
+  
+        .third{
+          margin: 13px 0 0 258px !important;
+        }
+      }
+  
+      .logos-text{
+        .text{
+          .first-text{
+            margin: 20px 0 0 5%;
+          }
+  
+          .second-text{
+            margin: -42px 0 0 31%;
+
+            font-size: 16px;
+          }
+  
+          .third-text{
+            margin: -46px 0 0 70%;
+  
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
     .section-mission{  
       .box{ 
         margin: 100px 0 0 -24% !important;
 
-        background-size: 51% 72% !important;
+        background-size: 51% 59% !important;
+      }
+
+      .title{
+        margin: -35px 0 0 17% !important;
+        font-size: 26px !important;
+        width: 390px !important;
+      }
+
+      .content-pocket2{
+        .logos{
+          .first-logo{
+            margin: 20px 0 0 27% !important;
+          }
+
+          .second-logo{
+            margin: 3px 0 0 27% !important;
+          }
+
+          .third-logo{
+            margin: 2px 0 0 27% !important;
+          }
+
+          .fourth-logo{
+            margin: -1px 0 0 27% !important;
+          }
+
+          .small-title{ 
+            margin:-47px 0 15px 35% !important;
+
+            font-size: 15px !important;
+          }
+
+          .small-desc{  
+            margin: -12px 0 33px 35% !important;
+            width: 240px !important;
+
+            font-size: 15px !important;
+          }
+        }
+      }
+    }
+
+    .section-healthy{
+      .title{
+        margin-left: 18px !important;
+      }
+
+      .desc{
+        margin-left: 20px !important;
+      }
+
+      .swiper-container{
+        padding: 5px 0 80px 22px !important;
+      }
+
+      .btn{
+        margin: -45px 0 0 18px !important;
+      }
+    }
+
+    .section-is{
+      padding: 0px 0 100px 0;
+  
+      .content-wrapper{
+        .img{  
+          margin: 86% 0 0 7% !important;
+          width: 290px !important;
+        }
+  
+        .content-holder{
+          .title{
+            margin: -110% 0 0 5% !important;
+            font-size: 28px!important;
+            width: 260px
+          }
+  
+          .title-blue{
+            margin: 0 0 82% 5% !important;
+            font-size: 28px!important;
+          }
+  
+          .desc{
+            margin: -29px 0 45px 5% !important;
+            width: 290px !important;
+            font-size: 16px;
+          }
+  
+          .content-features{  
+            .content-pocket1{
+              margin: 4px 65% 12px 0;
+              width: 345px;
+            }
+  
+            .content-pocket2{
+              margin: 7px 9% 11px 0 !important; 
+              width: 300px;
+            }
+  
+            .content-pocket3{
+              margin: 8px 9% 16px 0 !important;
+              width: 300px;
+            }
+          }
+  
+          .btn{
+            margin: 10px 0 0 5%;
+          }
+        }
       }
     }
   }
@@ -3163,6 +2730,54 @@
 
 @media (min-width: 330px) and (max-width: 339px){
   .home {
+    .section-intro {
+      .swiper-container{
+        h1{
+          width: 300px;
+          margin: 30px 930px 0 0;
+
+          font-size: 37px;
+        }
+        .swiper-slide{
+          padding: 0 0 0 18px;
+        }
+      }
+
+      .logos{    
+        .first{
+          margin: 13px 0 0 22px !important;
+        }
+  
+        .second{
+          margin: 10px 0 0 130px !important;
+        }
+  
+        .third{
+          margin: 13px 0 0 250px !important;
+        }
+      }
+  
+      .logos-text{
+        .text{
+          .first-text{
+            margin: 20px 0 0 5%;
+          }
+  
+          .second-text{
+            margin: -42px 0 0 31%;
+
+            font-size: 16px;
+          }
+  
+          .third-text{
+            margin: -46px 0 0 70%;
+  
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
     .section-mission{  
       .box{ 
         margin: 100px 0 0 -26% !important;
@@ -3170,45 +2785,110 @@
         background-size: 49% 58% !important;
 
         .title{
-          font-size: 20px;
-          margin: -35px 0 0 22%;
+          margin: -35px 0 0 20% !important;
+          font-size: 24px !important;
+          width: 345px !important;
         }
 
-        .content-pocket{
+        .content-pocket2{
           .logos{
             .first-logo{
-              margin: 20px 0 0 65%;
-              width: 32px;
+              margin: 20px 0 0 29% !important;
             }
   
             .second-logo{
-              margin: 3px 0 0 65%;
-              width: 32px;
+              margin: 3px 0 0 29% !important;
             }
   
             .third-logo{
-              margin: 2px 0 0 65%;
-              width: 34px;
+              margin: 2px 0 0 29% !important;
             }
   
             .fourth-logo{
-              margin: -1px 0 0 65%;
-              width: 33px;
+              margin: -1px 0 0 29% !important;
             }
   
             .small-title{ 
-              margin:-47px 0 15px 80%;
-              width: 150px;
+              margin:-47px 0 15px 37% !important;
   
-              font-size: 13px;
+              font-size: 15px !important;
             }
   
             .small-desc{  
-              margin: -12px 0 33px 80%;
-              width: 225px;
+              margin: -12px 0 33px 37% !important;
+              width: 240px !important;
   
-              font-size: 13px;
+              font-size: 15px !important;
             }
+          }
+        }
+      }
+    }
+
+    .section-healthy{
+      .title{
+        margin-left: 18px !important;
+      }
+
+      .desc{
+        margin-left: 20px !important;
+      }
+
+      .swiper-container{
+        padding: 5px 0 80px 22px !important;
+      }
+
+      .btn{
+        margin: -45px 0 0 18px !important;
+      }
+    }
+
+    .section-is{
+      padding: 0px 0 100px 0;
+  
+      .content-wrapper{
+        .img{  
+          margin: 86% 0 0 7% !important;
+          width: 290px !important;
+        }
+  
+        .content-holder{
+          .title{
+            margin: -110% 0 0 5% !important;
+            font-size: 28px!important;
+            width: 260px
+          }
+  
+          .title-blue{
+            margin: 0 0 82% 5% !important;
+            font-size: 28px!important;
+          }
+  
+          .desc{
+            margin: -29px 0 45px 5% !important;
+            width: 290px !important;
+            font-size: 16px;
+          }
+  
+          .content-features{  
+            .content-pocket1{
+              margin: 4px 65% 12px 0;
+              width: 345px;
+            }
+  
+            .content-pocket2{
+              margin: 7px 9% 11px 0 !important; 
+              width: 300px;
+            }
+  
+            .content-pocket3{
+              margin: 8px 9% 16px 0 !important;
+              width: 300px;
+            }
+          }
+  
+          .btn{
+            margin: 10px 0 0 5%;
           }
         }
       }
@@ -3218,52 +2898,165 @@
 
 @media (min-width: 320px) and (max-width: 329px){
   .home {
+    .section-intro {
+      .swiper-container{
+        h1{
+          width: 300px;
+          margin: 30px 930px 0 0;
+
+          font-size: 37px;
+        }
+        .swiper-slide{
+          padding: 0 0 0 18px;
+        }
+      }
+
+      .logos{    
+        .first{
+          margin: 13px 0 0 22px !important;
+        }
+  
+        .second{
+          margin: 10px 0 0 130px !important;
+        }
+  
+        .third{
+          margin: 13px 0 0 246px !important;
+        }
+      }
+  
+      .logos-text{
+        .text{
+          .first-text{
+            margin: 20px 0 0 5%;
+          }
+  
+          .second-text{
+            margin: -42px 0 0 33%;
+
+            font-size: 16px;
+          }
+  
+          .third-text{
+            margin: -46px 0 0 70%;
+  
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
     .section-mission{  
       .box{ 
         margin: 100px 0 0 -26% !important;
 
-        background-size: 47% 58% !important;
+        background-size: 49% 58% !important;
 
         .title{
-          font-size: 20px;
-          margin: -35px 0 0 22%;
+          margin: -35px 0 0 20% !important;
+          font-size: 24px !important;
+          width: 345px !important;
         }
 
-        .content-pocket{
+        .content-pocket2{
           .logos{
             .first-logo{
-              margin: 20px 0 0 65%;
-              width: 32px;
+              margin: 20px 0 0 29% !important;
             }
   
             .second-logo{
-              margin: 3px 0 0 65%;
-              width: 32px;
+              margin: 3px 0 0 29% !important;
             }
   
             .third-logo{
-              margin: 2px 0 0 65%;
-              width: 34px;
+              margin: 2px 0 0 29% !important;
             }
   
             .fourth-logo{
-              margin: -1px 0 0 65%;
-              width: 33px;
+              margin: -1px 0 0 29% !important;
             }
   
             .small-title{ 
-              margin:-47px 0 15px 80%;
-              width: 150px;
+              margin:-47px 0 15px 37% !important;
   
-              font-size: 13px;
+              font-size: 15px !important;
             }
   
             .small-desc{  
-              margin: -12px 0 33px 80%;
-              width: 225px;
+              margin: -12px 0 33px 37% !important;
+              width: 240px !important;
   
-              font-size: 13px;
+              font-size: 15px !important;
             }
+          }
+        }
+      }
+    }
+
+    .section-healthy{
+      .title{
+        margin-left: 18px !important;
+      }
+
+      .desc{
+        margin-left: 20px !important;
+      }
+
+      .swiper-container{
+        padding: 5px 0 80px 22px !important;
+      }
+
+      .btn{
+        margin: -45px 0 0 18px !important;
+      }
+    }
+
+    .section-is{
+      padding: 0px 0 100px 0;
+  
+      .content-wrapper{
+        .img{  
+          margin: 86% 0 0 7% !important;
+          width: 290px !important;
+        }
+  
+        .content-holder{
+          .title{
+            margin: -110% 0 0 5% !important;
+            font-size: 28px!important;
+            width: 260px
+          }
+  
+          .title-blue{
+            margin: 0 0 82% 5% !important;
+            font-size: 28px!important;
+          }
+  
+          .desc{
+            margin: -29px 0 45px 5% !important;
+            width: 290px !important;
+            font-size: 16px;
+          }
+  
+          .content-features{  
+            .content-pocket1{
+              margin: 4px 65% 12px 0;
+              width: 345px;
+            }
+  
+            .content-pocket2{
+              margin: 7px 9% 11px 0 !important; 
+              width: 300px;
+            }
+  
+            .content-pocket3{
+              margin: 8px 9% 16px 0 !important;
+              width: 300px;
+            }
+          }
+  
+          .btn{
+            margin: 10px 0 0 5%;
           }
         }
       }

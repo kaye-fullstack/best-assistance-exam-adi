@@ -443,7 +443,7 @@ footer{
     }
   
     .content-tupperware{
-      padding: 20px 42px;
+      padding: 20px 9%;
   
       .fb-logo{
         margin-right: 7px;
@@ -501,19 +501,19 @@ footer{
           .content-wrapper{
             .text{
               .title{
-                margin: 29px 0 9px 20%;
+                margin: 29px 0 9px 15%;
                 font-size: 32px;
               }
           
               .desc{
-                margin: 12px 21px 19px 20%;
+                margin: 12px 21px 19px 15%;
                 font-size: 15px;
               }
         
               .logos{
                 margin-bottom: 3%;
                 .apple-logo{
-                  margin: 11px 0 0 30%;
+                  margin: 11px 0 0 27%;
                   img{
                     width: 155px;
                   }
@@ -526,6 +526,7 @@ footer{
                 }
               }
             }
+
             .hand{
               margin: -28% 10px 0 5%;
               width: 90%;
@@ -589,7 +590,7 @@ footer{
     }
   
     .content-tupperware{
-      padding: 20px 11%;
+      padding: 20px 14%;
 
       .content-holder{
         ul{ 
@@ -610,7 +611,30 @@ footer{
 @media (min-width: 768px) and (max-width: 830px){
   footer{
     .container{
-      .container-bg{  
+      .container-bg{ 
+        .content-box{    
+          .content-wrapper{
+            .text{
+              .title{
+                margin: 29px 0 9px 18.5%;
+                font-size: 32px;
+              }
+          
+              .desc{
+                margin: 12px 21px 19px 18.5%;
+                font-size: 15px;
+              }
+        
+              .logos{
+                margin-bottom: 3%;
+                .apple-logo{
+                  margin: 11px 0 0 27%;
+                }
+              }
+            }
+          }
+        } 
+
         .content-holder{    
           .content-pockets{  
             &:nth-child(3){
@@ -633,6 +657,26 @@ footer{
   }
 }
 
+@media (min-width: 768px) and (max-width: 780px){
+  footer{
+    .container{
+      .container-bg{ 
+        .content-box{    
+          .content-wrapper{
+            .text{     
+              .logos{
+                .apple-logo{
+                  margin: 11px 0 0 26%;
+                }
+              }
+            }
+          }
+        } 
+      }
+    }
+  }
+}
+
 @include respond-to(sm) {
   footer{
     margin-top: 70px;
@@ -647,19 +691,19 @@ footer{
           .content-wrapper{
             .text{
               .title{
-                margin: 29px 0 9px 8%;
+                margin: 29px 0 9px 11.5%;
                 font-size: 22px;
               }
           
               .desc{
-                margin: 12px 21px 19px 8%;
+                margin: 12px 21px 19px 11.5%;
                 font-size: 14px;
               }
         
               .logos{
                 margin-bottom: 4%;
                 .apple-logo{
-                  margin: 11px 0 0 13%;
+                  margin: 11px 0 0 17.5%;
                   img{
                     width: 140px;
                   }
@@ -736,195 +780,35 @@ footer{
       }
     }
 
-    .content-holder{
-      ul{  
-        margin: 0;
-        padding: 0;
-        li{ 
-          padding-left: 5px;
-      
-          a{
-            font-size: 15px;
-            color:$dark-grey;
-          }
-        }
-      }
-    }  
-
     .content-tupperware{
-      padding: 16px 90px;
-  
-      .fb-logo{
-        margin-right: 7px;
-        width: 40px;
-      }
-  
-      .ig-logo{
-        margin-right: 5px;
-        width: 40px;
-      }
-  
-      .in-logo{
-        margin-right: 2px;
-        width: 40px;
-      }
-  
-      .em-logo{
-        margin: -5px 5px 0 5px;
-        width: 45px;
-      }
-  
-      .p-logo{
-        margin: -5px 0 0 0;
-        width: 45px;
-      }
+      display: none;
     }
   }
 }
 
 @media (min-width: 596px) and (max-width: 677px) {
-  footer{
-    margin-top: 70px;
-  
-    .img-leaves{
-      display: none;
-    }
-  
+  footer{  
     .container{
       .container-bg{
         .content-box{    
           .content-wrapper{
             .text{
               .title{
-                margin: 29px 0 9px 8%;
-                font-size: 22px;
+                margin: 29px 0 9px 13%;
               }
           
               .desc{
-                margin: 12px 21px 19px 8%;
-                font-size: 14px;
+                margin: 12px 21px 19px 13%;
               }
         
               .logos{
-                margin-bottom: 4%;
                 .apple-logo{
-                  margin: 11px 0 0 13%;
-                  img{
-                    width: 140px;
-                  }
-                }
-                .google-logo{
-                  margin-left: 35%;
-                  img{
-                    width: 140px;
-                  }
+                  margin: 11px 0 0 18%;
                 }
               }
-            }
-            .hand{
-              margin: -4% 10px 0 5%;
-              width: 90%;
             }
           }      
         }
-  
-        .content-holder{    
-          .content-pockets{
-            padding: 40px 0 0 0;
-  
-            &:nth-child(1){    
-              .logo{
-                width: 55px;
-                margin: 8px 0 10px 5.7%;
-              }
-
-              .text{
-                margin: 76px 20px 15px 17%;
-              }
-
-              u{
-                margin: 15px 0 0 17%;
-              }
-            }
-  
-            &:nth-child(2){
-              .logo{
-                width: 55px;
-                margin: -7% 0 44px 6%;
-              }
-
-              .text{
-                padding: 29px 20px 0 30px;
-                margin: 0;
-              }
-  
-              u{
-                margin: 3% 0 0 4%;
-              }
-            }
-  
-            &:nth-child(3){
-              .logo{
-                width: 40px;
-    
-                margin: -14% 0 0 6%;
-              }
-  
-              .number{
-                margin: -6% 20px 0 -2%;
-                font-size: 30px;
-              }
-      
-              u{
-                margin: 12% 0 0 6%;
-                font-size: 13px;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .content-holder{
-      ul{  
-        margin: 0;
-        padding: 0;
-        li{ 
-          padding-left: 5px !important;
-      
-          a{
-            font-size: 13px !important;
-          }
-        }
-      }
-    }  
-
-    .content-tupperware{
-      padding: 16px 90px;
-  
-      .fb-logo{
-        margin-right: 7px;
-        width: 40px;
-      }
-  
-      .ig-logo{
-        margin-right: 5px;
-        width: 40px;
-      }
-  
-      .in-logo{
-        margin-right: 2px;
-        width: 40px;
-      }
-  
-      .em-logo{
-        margin: -5px 5px 0 5px;
-        width: 45px;
-      }
-  
-      .p-logo{
-        margin: -5px 0 0 0;
-        width: 45px;
       }
     }
   }
@@ -934,31 +818,34 @@ footer{
   footer{ 
     .container{
       .container-bg{
-        .content-holder{    
-          .content-pockets{
-            &:nth-child(3){    
-              u{
-                margin: 17% 0 0 6%;
+        .content-box{    
+          .content-wrapper{
+            .text{
+              .title{
+                margin: 29px 0 9px 14.5%;
+              }
+          
+              .desc{
+                margin: 12px 21px 19px 14.5%;
+              }
+        
+              .logos{
+                .apple-logo{
+                  margin: 11px 0 0 18%;
+                }
               }
             }
-          }
+          }      
         }
       }
-      .content-holder{
-        ul{  
-          margin: 0;
-          padding: 0;
-          li{ 
-            padding-left: 5px !important;
-        
-            a{
-              font-size: 14px;
-            }
+    }
+    .content-holder{    
+      .content-pockets{
+        &:nth-child(3){    
+          u{
+            margin: 17% 0 0 6%;
           }
         }
-      }
-      .content-tupperware{
-        padding: 16px 70px;
       }
     }
   }
@@ -979,14 +866,14 @@ footer{
           .content-wrapper{
             .text{
               .title{
-                margin: 16% 0 10px 8%;
+                margin: 16% 0 10px 9%;
                 width: 100%;
           
                 font-size: 30px;
               }
           
               .desc{
-                margin: 8px 0 20px 8%;
+                margin: 8px 0 20px 9%;
                 width: 450px;
           
                 font-size: 18px;
@@ -1102,134 +989,51 @@ footer{
 
 @media (min-width: 425px) and (max-width: 490px) {
   footer {
-    margin-top: 0px;
-
-    .img-leaves{
-      display: none;
-    }
     .container{
       .container-bg{
-        padding-bottom: 40%;
-
         .content-box{
           .content-wrapper{
             .text{
               .title{
-                margin: 16% 0 10px 8%;
-          
                 font-size: 26px;
               }
           
               .desc{
-                margin: 8px 0 20px 8%;
                 width: 400px;
           
                 font-size: 17px;
               }
-        
-              .logos{        
-                .apple-logo{
-                  margin: 5% 0 10% 9%;
-                  
-                  img{
-                    width: 240%;
-                  }
-                }
-          
-                .google-logo{
-                  margin: 5% 0 10% 30%;
-
-                  img{
-                    width: 218%;
-                  }
-                }
-              }
-            }
-            .hand{
-              display: none;
             }
           }      
         }
   
         .content-holder{  
-          flex-direction: column;
-
-          border: none;
           .content-pockets{
-            padding: 40px 0 0 0;
-  
             &:nth-child(1){ 
-              width: 100%;
-
-              .logo{
-                width: 52px;
-                margin: 0 0 0 5%;
-              }
-  
               .text{
                 font-size: 17px;
-      
-                margin: 10% 0 2% 5%;
-                width: 400px;
-              }
-  
-              u{
-                font-size: 16px;
 
-                margin: 10% 0 0 5%;
+                width: 400px;
               }
             }
   
             &:nth-child(2){  
-              width: 100%;
-
-              border: none;
-              .logo{
-                width: 51px;
-                margin: 0 0 0 5%;
-              }
-
               .text{
-                font-size: 17px;
-      
-                margin: 13% 0 0 5%;
                 width: 400px;
-              }
-  
-              u{
-                font-size: 16px;
 
-                margin: 3% 0 0 5%;
+                font-size: 17px;
               }
             }
   
             &:nth-child(3){ 
-              width: 100%;
-              .logo{
-                width: 38px;
-    
-                margin: 8% 0 0 5%;
-              }
-  
               .number{
                 font-size: 30px;
 
-                margin: 17% 0 0 -5%;
                 width: 400px;
-              }
-  
-              u{
-                font-size: 16px;
-
-                margin: 26% 0 0 4.5%;
               }
             }
           }
         }
-      }
-
-      .content-tupperware{
-        display: none;
       }
     }
   }
@@ -1237,11 +1041,6 @@ footer{
 
 @media (min-width: 395px) and (max-width: 424px) {
   footer {
-    margin-top: 0px;
-
-    .img-leaves{
-      display: none;
-    }
     .container{
       .container-bg{
         padding-bottom: 45%;
@@ -1249,14 +1048,11 @@ footer{
         .content-box{
           .content-wrapper{
             .text{
-              .title{
-                margin: 16% 0 10px 8%;
-          
+              .title{          
                 font-size: 24px;
               }
           
               .desc{
-                margin: 8px 0 20px 8%;
                 width: 320px;
           
                 font-size: 16px;
@@ -1264,8 +1060,6 @@ footer{
         
               .logos{        
                 .apple-logo{
-                  margin: 5% 0 10% 9%;
-                  
                   img{
                     width: 280%;
                   }
@@ -1280,27 +1074,12 @@ footer{
                 }
               }
             }
-            .hand{
-              display: none;
-            }
           }      
         }
   
         .content-holder{  
-          flex-direction: column;
-
-          border: none;
-          .content-pockets{
-            padding: 40px 0 0 0;
-  
+          .content-pockets{  
             &:nth-child(1){ 
-              width: 100%;
-
-              .logo{
-                width: 52px;
-                margin: 0 0 0 5%;
-              }
-  
               .text{
                 font-size: 16px;
       
@@ -1310,20 +1089,10 @@ footer{
   
               u{
                 font-size: 15px;
-
-                margin: 10% 0 0 5%;
               }
             }
   
             &:nth-child(2){  
-              width: 100%;
-
-              border: none;
-              .logo{
-                width: 51px;
-                margin: 0 0 0 5%;
-              }
-
               .text{
                 font-size: 16px;
       
@@ -1333,19 +1102,10 @@ footer{
   
               u{
                 font-size: 15px;
-
-                margin: 3% 0 0 5%;
               }
             }
   
             &:nth-child(3){ 
-              width: 100%;
-              .logo{
-                width: 38px;
-    
-                margin: 8% 0 0 5%;
-              }
-  
               .number{
                 font-size: 28px;
 
@@ -1361,10 +1121,6 @@ footer{
             }
           }
         }
-      }
-
-      .content-tupperware{
-        display: none;
       }
     }
   }
@@ -1372,11 +1128,6 @@ footer{
 
 @media (min-width: 360px) and (max-width: 394px) {
   footer {
-    margin-top: 0px;
-
-    .img-leaves{
-      display: none;
-    }
     .container{
       .container-bg{
         padding-bottom: 50%;
@@ -1385,22 +1136,17 @@ footer{
           .content-wrapper{
             .text{
               .title{
-                margin: 16% 0 10px 8%;
-          
                 font-size: 22px;
               }
           
               .desc{
-                margin: 8px 0 20px 8%;
                 width: 320px;
           
                 font-size: 16px;
               }
         
               .logos{        
-                .apple-logo{
-                  margin: 5% 0 10% 9%;
-                  
+                .apple-logo{        
                   img{
                     width: 280%;
                   }
@@ -1408,34 +1154,18 @@ footer{
           
                 .google-logo{
                   margin: 5% 0 10% 38%;
-
                   img{
                     width: 245%;
                   }
                 }
               }
             }
-            .hand{
-              display: none;
-            }
           }      
         }
   
         .content-holder{  
-          flex-direction: column;
-
-          border: none;
           .content-pockets{
-            padding: 40px 0 0 0;
-  
             &:nth-child(1){ 
-              width: 100%;
-
-              .logo{
-                width: 52px;
-                margin: 0 0 0 5%;
-              }
-  
               .text{
                 font-size: 16px;
       
@@ -1445,20 +1175,10 @@ footer{
   
               u{
                 font-size: 15px;
-
-                margin: 10% 0 0 5%;
               }
             }
   
             &:nth-child(2){  
-              width: 100%;
-
-              border: none;
-              .logo{
-                width: 51px;
-                margin: 0 0 0 5%;
-              }
-
               .text{
                 font-size: 16px;
       
@@ -1468,19 +1188,10 @@ footer{
   
               u{
                 font-size: 15px;
-
-                margin: 3% 0 0 5%;
               }
             }
   
-            &:nth-child(3){ 
-              width: 100%;
-              .logo{
-                width: 38px;
-    
-                margin: 8% 0 0 5%;
-              }
-  
+            &:nth-child(3){  
               .number{
                 font-size: 28px;
 
@@ -1497,36 +1208,23 @@ footer{
           }
         }
       }
-
-      .content-tupperware{
-        display: none;
-      }
     }
   }
 }
 
 @media (min-width: 320px) and (max-width: 359px) {
   footer {
-    margin-top: 0px;
-
-    .img-leaves{
-      display: none;
-    }
     .container{
       .container-bg{
         padding-bottom: 50%;
-
         .content-box{
           .content-wrapper{
             .text{
               .title{
-                margin: 16% 0 10px 8%;
-          
                 font-size: 19px;
               }
           
               .desc{
-                margin: 8px 0 20px 8%;
                 width: 280px;
           
                 font-size: 15px;
@@ -1534,8 +1232,6 @@ footer{
         
               .logos{        
                 .apple-logo{
-                  margin: 5% 0 10% 9%;
-                  
                   img{
                     width: 280%;
                   }
@@ -1543,32 +1239,20 @@ footer{
           
                 .google-logo{
                   margin: 5% 0 10% 38%;
-
                   img{
                     width: 245%;
                   }
                 }
               }
             }
-            .hand{
-              display: none;
-            }
           }      
         }
   
         .content-holder{  
-          flex-direction: column;
-
-          border: none;
           .content-pockets{
-            padding: 40px 0 0 0;
-  
             &:nth-child(1){ 
-              width: 100%;
-
               .logo{
                 width: 49px;
-                margin: 0 0 0 5%;
               }
   
               .text{
@@ -1580,18 +1264,12 @@ footer{
   
               u{
                 font-size: 14px;
-
-                margin: 10% 0 0 5%;
               }
             }
   
             &:nth-child(2){  
-              width: 100%;
-
-              border: none;
               .logo{
                 width: 48px;
-                margin: 0 0 0 5%;
               }
 
               .text{
@@ -1603,17 +1281,12 @@ footer{
   
               u{
                 font-size: 14px;
-
-                margin: 3% 0 0 5%;
               }
             }
   
             &:nth-child(3){ 
-              width: 100%;
               .logo{
                 width: 36px;
-    
-                margin: 8% 0 0 5%;
               }
   
               .number{
@@ -1631,10 +1304,6 @@ footer{
             }
           }
         }
-      }
-
-      .content-tupperware{
-        display: none;
       }
     }
   }
